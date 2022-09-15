@@ -1,0 +1,7 @@
+C:\devs2blu\Aula6\SlnAula6\src\Dev2Blu.ProjetosAula.Aula6Loops\bin\Debug\Dev2Blu.ProjetosAula.Aula6Loops.exe.config
+C:\devs2blu\Aula6\SlnAula6\src\Dev2Blu.ProjetosAula.Aula6Loops\bin\Debug\Dev2Blu.ProjetosAula.Aula6Loops.exe
+C:\devs2blu\Aula6\SlnAula6\src\Dev2Blu.ProjetosAula.Aula6Loops\bin\Debug\Dev2Blu.ProjetosAula.Aula6Loops.pdb
+C:\devs2blu\Aula6\SlnAula6\src\Dev2Blu.ProjetosAula.Aula6Loops\obj\Debug\Dev2Blu.ProjetosAula.Aula6Loops.csproj.AssemblyReference.cache
+C:\devs2blu\Aula6\SlnAula6\src\Dev2Blu.ProjetosAula.Aula6Loops\obj\Debug\Dev2Blu.ProjetosAula.Aula6Loops.csproj.CoreCompileInputs.cache
+C:\devs2blu\Aula6\SlnAula6\src\Dev2Blu.ProjetosAula.Aula6Loops\obj\Debug\Dev2Blu.ProjetosAula.Aula6Loops.exe
+C:\devs2blu\Aula6\SlnAula6\src\Dev2Blu.ProjetosAula.Aula6Loops\obj\Debug\Dev2Blu.ProjetosAula.Aula6Loops.pdb

@@ -1,0 +1,7 @@
+C:\Users\Usuario\source\repos\SolutionProjetoAula2\src\ProjetoAula2\CursoDev2Blu.ProjetosAulas.ProjetoAula2\bin\Debug\CursoDev2Blu.ProjetosAulas.ProjetoAula2.exe.config
+C:\Users\Usuario\source\repos\SolutionProjetoAula2\src\ProjetoAula2\CursoDev2Blu.ProjetosAulas.ProjetoAula2\bin\Debug\CursoDev2Blu.ProjetosAulas.ProjetoAula2.exe
+C:\Users\Usuario\source\repos\SolutionProjetoAula2\src\ProjetoAula2\CursoDev2Blu.ProjetosAulas.ProjetoAula2\bin\Debug\CursoDev2Blu.ProjetosAulas.ProjetoAula2.pdb
+C:\Users\Usuario\source\repos\SolutionProjetoAula2\src\ProjetoAula2\CursoDev2Blu.ProjetosAulas.ProjetoAula2\obj\Debug\CursoDev2Blu.ProjetosAulas.ProjetoAula2.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\SolutionProjetoAula2\src\ProjetoAula2\CursoDev2Blu.ProjetosAulas.ProjetoAula2\obj\Debug\CursoDev2Blu.ProjetosAulas.ProjetoAula2.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\SolutionProjetoAula2\src\ProjetoAula2\CursoDev2Blu.ProjetosAulas.ProjetoAula2\obj\Debug\CursoDev2Blu.ProjetosAulas.ProjetoAula2.exe
+C:\Users\Usuario\source\repos\SolutionProjetoAula2\src\ProjetoAula2\CursoDev2Blu.ProjetosAulas.ProjetoAula2\obj\Debug\CursoDev2Blu.ProjetosAulas.ProjetoAula2.pdb

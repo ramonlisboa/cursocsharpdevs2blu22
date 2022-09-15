@@ -1,0 +1,7 @@
+C:\devs2blu\Aula4\RevisaoCondicionais\src\Devs2Blu.ProjetosAula.RevisaoCondicionais\bin\Debug\Devs2Blu.ProjetosAula.RevisaoCondicionais.exe.config
+C:\devs2blu\Aula4\RevisaoCondicionais\src\Devs2Blu.ProjetosAula.RevisaoCondicionais\bin\Debug\Devs2Blu.ProjetosAula.RevisaoCondicionais.exe
+C:\devs2blu\Aula4\RevisaoCondicionais\src\Devs2Blu.ProjetosAula.RevisaoCondicionais\bin\Debug\Devs2Blu.ProjetosAula.RevisaoCondicionais.pdb
+C:\devs2blu\Aula4\RevisaoCondicionais\src\Devs2Blu.ProjetosAula.RevisaoCondicionais\obj\Debug\Devs2Blu.ProjetosAula.RevisaoCondicionais.csproj.AssemblyReference.cache
+C:\devs2blu\Aula4\RevisaoCondicionais\src\Devs2Blu.ProjetosAula.RevisaoCondicionais\obj\Debug\Devs2Blu.ProjetosAula.RevisaoCondicionais.csproj.CoreCompileInputs.cache
+C:\devs2blu\Aula4\RevisaoCondicionais\src\Devs2Blu.ProjetosAula.RevisaoCondicionais\obj\Debug\Devs2Blu.ProjetosAula.RevisaoCondicionais.exe
+C:\devs2blu\Aula4\RevisaoCondicionais\src\Devs2Blu.ProjetosAula.RevisaoCondicionais\obj\Debug\Devs2Blu.ProjetosAula.RevisaoCondicionais.pdb

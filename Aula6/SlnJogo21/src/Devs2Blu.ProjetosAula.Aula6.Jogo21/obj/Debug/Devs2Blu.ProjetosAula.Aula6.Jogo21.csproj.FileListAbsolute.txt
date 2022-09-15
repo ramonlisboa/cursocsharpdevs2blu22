@@ -1,0 +1,10 @@
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\bin\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.exe.config
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\bin\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.exe
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\bin\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.pdb
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\obj\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.csproj.AssemblyReference.cache
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\obj\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.Form1.resources
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\obj\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.Properties.Resources.resources
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\obj\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.csproj.GenerateResource.cache
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\obj\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.csproj.CoreCompileInputs.cache
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\obj\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.exe
+C:\devs2blu\Aula6\SlnJogo21\src\Devs2Blu.ProjetosAula.Aula6.Jogo21\obj\Debug\Devs2Blu.ProjetosAula.Aula6.Jogo21.pdb

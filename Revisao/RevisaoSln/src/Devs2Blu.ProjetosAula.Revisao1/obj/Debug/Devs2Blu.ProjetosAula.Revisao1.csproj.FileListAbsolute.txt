@@ -1,0 +1,7 @@
+C:\devs2blu\Revisao\RevisaoSln\src\Devs2Blu.ProjetosAula.Revisao1\bin\Debug\Devs2Blu.ProjetosAula.Revisao1.exe.config
+C:\devs2blu\Revisao\RevisaoSln\src\Devs2Blu.ProjetosAula.Revisao1\bin\Debug\Devs2Blu.ProjetosAula.Revisao1.exe
+C:\devs2blu\Revisao\RevisaoSln\src\Devs2Blu.ProjetosAula.Revisao1\bin\Debug\Devs2Blu.ProjetosAula.Revisao1.pdb
+C:\devs2blu\Revisao\RevisaoSln\src\Devs2Blu.ProjetosAula.Revisao1\obj\Debug\Devs2Blu.ProjetosAula.Revisao1.csproj.AssemblyReference.cache
+C:\devs2blu\Revisao\RevisaoSln\src\Devs2Blu.ProjetosAula.Revisao1\obj\Debug\Devs2Blu.ProjetosAula.Revisao1.csproj.CoreCompileInputs.cache
+C:\devs2blu\Revisao\RevisaoSln\src\Devs2Blu.ProjetosAula.Revisao1\obj\Debug\Devs2Blu.ProjetosAula.Revisao1.exe
+C:\devs2blu\Revisao\RevisaoSln\src\Devs2Blu.ProjetosAula.Revisao1\obj\Debug\Devs2Blu.ProjetosAula.Revisao1.pdb
