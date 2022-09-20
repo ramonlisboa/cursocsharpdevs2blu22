@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.Classes
 {
-    public class Pessoa
+    public abstract class Pessoa
     {
         public string Nome { get; set; }
         public string SobreNome { get; set; }

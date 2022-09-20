@@ -17,13 +17,13 @@ namespace Dev2Blu.ProjetosAula.AulaOOP1Int
         public List<Diretor> DiretorsList { get; set; }
         public Form1()
         {
+            RecepcionistasList = new List<Recepcionista>();
+            DiretorsList = new List<Diretor>();
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            RecepcionistasList = new List<Recepcionista>();
-            DiretorsList = new List<Diretor>();
 
         }
 
@@ -31,9 +31,9 @@ namespace Dev2Blu.ProjetosAula.AulaOOP1Int
         {
             if (rdDiretor.Checked)
             {
-                Diretor diretor = new Diretor();
-                diretor.Nome = txtNome.Text;
-                diretor.SobreNome = txtSobreNome.Text;
+                Diretor diretor = new Diretor(txtNome.Text, txtSobreNome.Text, 5000.00);
+                /*diretor.Nome = txtNome.Text;
+                diretor.SobreNome = txtSobreNome.Text;*/
                 SalvarDiretor(diretor);
             } else if (rdRecepcionista.Checked)
             {
