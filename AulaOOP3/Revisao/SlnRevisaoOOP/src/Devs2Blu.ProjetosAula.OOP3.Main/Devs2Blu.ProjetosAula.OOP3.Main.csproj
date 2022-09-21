@@ -45,9 +45,22 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\CustomMath.cs" />
+    <Compile Include="Utils\Mocks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Devs2Blu.ProjetosAula.OOP3.Models\Devs2Blu.ProjetosAula.OOP3.Models.csproj">
+      <Project>{65eefe8e-a5c9-470b-a2e4-78a175df2615}</Project>
+      <Name>Devs2Blu.ProjetosAula.OOP3.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Agenda\" />
+    <Folder Include="Cadastros\" />
+    <Folder Include="Financeiro\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

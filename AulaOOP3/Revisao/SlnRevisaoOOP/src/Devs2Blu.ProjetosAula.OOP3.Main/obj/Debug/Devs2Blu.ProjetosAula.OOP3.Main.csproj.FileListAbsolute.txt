@@ -1,0 +1,10 @@
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\bin\Debug\Devs2Blu.ProjetosAula.OOP3.Main.exe.config
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\bin\Debug\Devs2Blu.ProjetosAula.OOP3.Main.exe
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\bin\Debug\Devs2Blu.ProjetosAula.OOP3.Main.pdb
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\bin\Debug\Devs2Blu.ProjetosAula.OOP3.Models.dll
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\bin\Debug\Devs2Blu.ProjetosAula.OOP3.Models.pdb
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\obj\Debug\Devs2Blu.ProjetosAula.OOP3.Main.csproj.AssemblyReference.cache
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\obj\Debug\Devs2Blu.ProjetosAula.OOP3.Main.csproj.CoreCompileInputs.cache
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\obj\Debug\Devs2Blu.ProjetosAula.OOP3.Main.csproj.CopyComplete
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\obj\Debug\Devs2Blu.ProjetosAula.OOP3.Main.exe
+C:\devs2blu\AulaOOP3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Main\obj\Debug\Devs2Blu.ProjetosAula.OOP3.Main.pdb
