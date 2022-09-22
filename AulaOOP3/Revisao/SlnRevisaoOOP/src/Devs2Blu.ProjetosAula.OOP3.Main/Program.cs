@@ -41,23 +41,8 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main
                         break;
                 }
 
-            } while (!opcao.Equals(MenuEnums.SAIR));
+            } while (!opcao.Equals((int)MenuEnums.SAIR));
         }
 
-        public static void ViewListPacientes()
-        {
-            Console.Clear();
-
-            foreach (Paciente paciente in Mock.ListaPacientes)
-            {
-                Console.WriteLine("-----------------------------------------");
-                Console.WriteLine($"Paciente: {paciente.CodigoPaciente}");
-                Console.WriteLine($"Nome: {paciente.Nome}");
-                Console.WriteLine($"CPF: {paciente.CGCCPF}");
-                Console.WriteLine($"Convenio: {paciente.Convenio}");
-                Console.WriteLine("-----------------------------------------\n");
-            }
-
-        }
     }
 }

@@ -39,7 +39,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                         break;
                 }
 
-            } while (!opcao.Equals(MenuEnums.SAIR));
+            } while (!opcao.Equals((int)MenuEnums.SAIR));
         }
 
         public void ListarPacientes()
