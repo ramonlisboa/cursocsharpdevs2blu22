@@ -1,21 +1,15 @@
-﻿using System;
+﻿using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
+using Devs2Blu.ProjetosAula.OOP3.Models.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Devs2Blu.ProjetosAula.OOP3.Main.Utils;
-using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
-using Devs2Blu.ProjetosAula.OOP3.Models.Model;
 
 namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
-    public class CadastroPaciente
+    public class CadastroMedico
     {
-        public CadastroPaciente()
-        {
-
-        }
-
         public void MenuCadastro()
         {
             Int32 opcao;
@@ -23,10 +17,10 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             do
             {
                 Console.Clear();
-                Console.WriteLine("----- Cadastro de Pacientes -----");
-                Console.WriteLine("----- 1- Lista de Pacientes -----");
-                Console.WriteLine("----- 2- Cadastro de Pacientes -----");
-                Console.WriteLine("----- 3- Alterar Pacientes -----");
+                Console.WriteLine("----- Cadastro de Medicos -----");
+                Console.WriteLine("----- 1- Lista de Medicos -----");
+                Console.WriteLine("----- 2- Cadastro de Medicos -----");
+                Console.WriteLine("----- 3- Alterar Medicos -----");
                 Console.WriteLine("---------------------");
                 Console.WriteLine("----- 0- Sair -----");
                 Int32.TryParse(Console.ReadLine(), out opcao);
@@ -34,7 +28,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                 switch (opcao)
                 {
                     case (int)MenuEnums.LISTAR:
-                        ListarPacientes();
+                        ListarMedicos();
                         break;
                     default:
                         break;
@@ -43,33 +37,33 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             } while (!opcao.Equals((int)MenuEnums.SAIR));
         }
 
-        public void ListarPacientes()
+        public void ListarMedicos()
         {
             Console.Clear();
 
-            foreach (Paciente paciente in Program.Mock.ListaPacientes)
+            foreach (var medico in Program.Mock.ListaMedicos)
             {
                 Console.WriteLine("-----------------------------------------");
-                Console.WriteLine($"Paciente: {paciente.CodigoPaciente}");
-                Console.WriteLine($"Nome: {paciente.Nome}");
-                Console.WriteLine($"CPF: {paciente.CGCCPF}");
-                Console.WriteLine($"Convenio: {paciente.Convenio}");
+                Console.WriteLine($"Medico: {medico.CodigoMedico}");
+                Console.WriteLine($"Nome: {medico.Nome}");
+                Console.WriteLine($"Especialidade: {medico.Especialidade}");
+                Console.WriteLine($"CRM: {medico.CRM}");
                 Console.WriteLine("-----------------------------------------\n");
             }
             Console.ReadLine();
         }
 
-        public void CadastrarPaciente()
+        public void CadastrarMedico()
         {
 
         }
 
-        public void AlterarPaciente()
+        public void AlterarMedico()
         {
 
         }
 
-        public void ExcluirPaciente()
+        public void ExcluirMedico()
         {
 
         }
