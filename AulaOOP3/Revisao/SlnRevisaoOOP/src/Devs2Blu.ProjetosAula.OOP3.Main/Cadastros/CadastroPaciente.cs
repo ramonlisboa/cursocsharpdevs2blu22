@@ -59,9 +59,9 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Console.ReadLine();
         }
 
-        public void CadastrarPaciente()
+        public void CadastrarPaciente(Paciente novoPaciente)
         {
-
+            Program.Mock.ListaPacientes.Add(novoPaciente);
         }
 
         public void AlterarPaciente()
@@ -69,7 +69,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 
         }
 
-        public void ExcluirPaciente()
+        public void ExcluirPaciente(Paciente paciente)
         {
 
         }
