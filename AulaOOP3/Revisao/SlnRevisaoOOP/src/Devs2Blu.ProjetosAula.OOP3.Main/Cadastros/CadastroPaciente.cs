@@ -39,12 +39,22 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 
         private void AlterarPaciente(Paciente paciente)
         {
-
+            var pact = Program.Mock.ListaPacientes.Find(p => p.CodigoPaciente == paciente.CodigoPaciente);
+            int index = Program.Mock.ListaPacientes.IndexOf(pact);
+            Program.Mock.ListaPacientes[index] = paciente;
         }
 
         private void ExcluirPaciente(Paciente paciente)
         {
-
+            Program.Mock.ListaPacientes.Remove(paciente);
+        }
+        private void ListarPacientesByCodeAndName()
+        {
+            foreach (Paciente paciente in Program.Mock.ListaPacientes)
+            {
+                Console.Write($"| {paciente.CodigoPaciente} - {paciente.Nome} ");
+            }
+            Console.WriteLine("\n");
         }
 
 
@@ -70,13 +80,73 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 
         public void Cadastrar()
         {
+            Console.Clear();
             Paciente paciente = new Paciente();
+            Console.WriteLine("Informe o Nome do Paciente");
+            paciente.Nome = Console.ReadLine();
+
+            Console.WriteLine("Informe o CPF do Paciente");
+            paciente.CGCCPF = Console.ReadLine();
+
+            Console.WriteLine("Informe o Convênio do Paciente");
+            paciente.Convenio = Console.ReadLine();
+
+            Random rd = new Random();
+            paciente.Codigo = rd.Next(1, 100) + DateTime.Now.Second;
+            paciente.CodigoPaciente = Int32.Parse($"{paciente.Codigo}{rd.Next(100, 999)}");
+
             CadastrarPaciente(paciente);
         }
 
         public void Alterar()
         {
-            Paciente paciente = new Paciente();
+            Console.Clear();
+            Paciente paciente;
+            int codigoPaciente;
+
+            Console.WriteLine("Informe o Paciente que Deseja Alterar:\n");
+            ListarPacientesByCodeAndName();
+
+            Int32.TryParse(Console.ReadLine(), out codigoPaciente);
+
+            paciente = Program.Mock.ListaPacientes.Find(p => p.CodigoPaciente == codigoPaciente);
+
+            string opcaoAlterar;
+            bool alterar = true;
+
+            do
+            {
+                Console.WriteLine($"Paciente: {paciente.Codigo}/{paciente.CodigoPaciente} | Nome: {paciente.Nome} | CPF: {paciente.CGCCPF} | Convênio: {paciente.Convenio}");
+                Console.WriteLine("Qual campo deseja alterar?");
+                Console.WriteLine("01 - Nome | 02 - CPF | 03 Convênio | 00 - SAIR");
+                opcaoAlterar = Console.ReadLine();
+
+                switch (opcaoAlterar)
+                {
+                    case "01":
+                        Console.WriteLine("Informe um novo nome:");
+                        paciente.Nome = Console.ReadLine();
+                        break;
+                    case "02":
+                        Console.WriteLine("Informe um novo CPF:");
+                        paciente.CGCCPF = Console.ReadLine();
+                        break;
+                    case "03":
+                        Console.WriteLine("Informe um novo Convênio:");
+                        paciente.Convenio = Console.ReadLine();
+                        break;
+                    default:
+                        alterar = false;
+                        break;
+                }
+
+                if(alterar)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Dado Alterado com Sucesso!");
+                }
+            } while (alterar);
+
             AlterarPaciente(paciente);
         }
 
