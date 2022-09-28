@@ -49,31 +49,18 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 
 
         #region FACADE
-        public void MenuCadastro()
+        public Int32 MenuCadastro()
         {
             Int32 opcao;
-
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("----- Cadastro de Pacientes -----");
-                Console.WriteLine("----- 1- Lista de Pacientes -----");
-                Console.WriteLine("----- 2- Cadastro de Pacientes -----");
-                Console.WriteLine("----- 3- Alterar Pacientes -----");
-                Console.WriteLine("---------------------");
-                Console.WriteLine("----- 0- Sair -----");
-                Int32.TryParse(Console.ReadLine(), out opcao);
-
-                switch (opcao)
-                {
-                    case (int)MenuEnums.LISTAR:
-                        ListarPacientes();
-                        break;
-                    default:
-                        break;
-                }
-
-            } while (!opcao.Equals((int)MenuEnums.SAIR));
+            Console.Clear();
+            Console.WriteLine("----- Cadastro de Pacientes -----");
+            Console.WriteLine("----- 1- Lista de Pacientes -----");
+            Console.WriteLine("----- 2- Cadastro de Pacientes -----");
+            Console.WriteLine("----- 3- Alterar Pacientes -----");
+            Console.WriteLine("---------------------");
+            Console.WriteLine("----- 0- Sair -----");
+            Int32.TryParse(Console.ReadLine(), out opcao);
+            return opcao;
         }
 
         public void Listar()
@@ -81,19 +68,22 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             ListarPacientes();
         }
 
-        public void Cadastrar(Pessoa pessoa)
+        public void Cadastrar()
         {
-            CadastrarPaciente((Paciente)pessoa);
+            Paciente paciente = new Paciente();
+            CadastrarPaciente(paciente);
         }
 
-        public void Alterar(Pessoa pessoa)
+        public void Alterar()
         {
-            AlterarPaciente((Paciente)pessoa);
+            Paciente paciente = new Paciente();
+            AlterarPaciente(paciente);
         }
 
-        public void Excluir(Pessoa pessoa)
+        public void Excluir()
         {
-            ExcluirPaciente((Paciente)pessoa);
+            Paciente paciente = new Paciente();
+            ExcluirPaciente(paciente);
         }
 
         #endregion

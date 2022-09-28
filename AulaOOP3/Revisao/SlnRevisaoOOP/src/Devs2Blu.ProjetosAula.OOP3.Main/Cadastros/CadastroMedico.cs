@@ -1,4 +1,5 @@
-﻿using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
+﻿using Devs2Blu.ProjetosAula.OOP3.Main.Interfaces;
+using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
 using Devs2Blu.ProjetosAula.OOP3.Models.Model;
 using System;
 using System.Collections.Generic;
@@ -8,36 +9,25 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
-    public class CadastroMedico
+    public class CadastroMedico : IMenuCadastro
     {
-        public void MenuCadastro()
+        public Int32 MenuCadastro()
         {
             Int32 opcao;
 
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("----- Cadastro de Medicos -----");
-                Console.WriteLine("----- 1- Lista de Medicos -----");
-                Console.WriteLine("----- 2- Cadastro de Medicos -----");
-                Console.WriteLine("----- 3- Alterar Medicos -----");
-                Console.WriteLine("---------------------");
-                Console.WriteLine("----- 0- Sair -----");
-                Int32.TryParse(Console.ReadLine(), out opcao);
+            Console.Clear();
+            Console.WriteLine("----- Cadastro de Medicos -----");
+            Console.WriteLine("----- 1- Lista de Medicos -----");
+            Console.WriteLine("----- 2- Cadastro de Medicos -----");
+            Console.WriteLine("----- 3- Alterar Medicos -----");
+            Console.WriteLine("---------------------");
+            Console.WriteLine("----- 0- Sair -----");
+            Int32.TryParse(Console.ReadLine(), out opcao);
+            return opcao;
 
-                switch (opcao)
-                {
-                    case (int)MenuEnums.LISTAR:
-                        ListarMedicos();
-                        break;
-                    default:
-                        break;
-                }
-
-            } while (!opcao.Equals((int)MenuEnums.SAIR));
         }
 
-        public void ListarMedicos()
+        public void Listar()
         {
             Console.Clear();
 
@@ -53,19 +43,19 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Console.ReadLine();
         }
 
-        public void CadastrarMedico()
+        public void Cadastrar()
         {
-
+            throw new NotImplementedException();
         }
 
-        public void AlterarMedico()
+        public void Alterar()
         {
-
+            throw new NotImplementedException();
         }
 
-        public void ExcluirMedico()
+        public void Excluir()
         {
-
+            throw new NotImplementedException();
         }
     }
 }
