@@ -7,8 +7,8 @@
     <ProjectGuid>{65EEFE8E-A5C9-470B-A2E4-78A175DF2615}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Devs2Blu.ProjetosAula.OOP3.Models</RootNamespace>
-    <AssemblyName>Devs2Blu.ProjetosAula.OOP3.Models</AssemblyName>
+    <RootNamespace>Devs2Blu.ProjetosAula.SistemaCadastro.Models</RootNamespace>
+    <AssemblyName>Devs2Blu.ProjetosAula.SistemaCadastro.Models</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,6 +45,7 @@
     <Compile Include="Model\Agenda.cs" />
     <Compile Include="Model\AgendaPaciente.cs" />
     <Compile Include="Model\ContaPaciente.cs" />
+    <Compile Include="Model\Convenio.cs" />
     <Compile Include="Model\Endereco.cs" />
     <Compile Include="Model\Faturamento.cs" />
     <Compile Include="Enum\FlStatus.cs" />
