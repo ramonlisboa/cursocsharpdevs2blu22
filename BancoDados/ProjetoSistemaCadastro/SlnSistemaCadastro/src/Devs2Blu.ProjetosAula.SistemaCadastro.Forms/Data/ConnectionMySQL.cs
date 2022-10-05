@@ -32,7 +32,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
             }
             catch (MySqlException myex)
             {
-                MessageBox.Show(myex.Message, "Erro ao Conectar");
+                MessageBox.Show(myex.Message, "Erro ao Conectar",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
 
