@@ -18,17 +18,17 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
 
         public static MySqlConnection GetConnection()
         {
-            Server = "localhost";
-            DataBase = "sistemacadastro";
-            User = "root";
-            Password = "root";
-            ConnectionString = $"Persist Security Info=False;server={Server};database={DataBase};uid={User};server={Server};database={DataBase};uid={User};pwd='{Password}'";
-            
-            var conn = new MySqlConnection(ConnectionString);
-
             try
             {
+                Server = "localhost";
+                DataBase = "sistemacadastro";
+                User = "root";
+                Password = "root";
+                ConnectionString = $"Persist Security Info=False;server={Server};database={DataBase};uid={User};server={Server};database={DataBase};uid={User};pwd='{Password}'";
+
+                var conn = new MySqlConnection(ConnectionString);
                 conn.Open();
+                return conn;
             }
             catch (MySqlException myex)
             {
@@ -36,7 +36,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
                 throw;
             }
 
-            return conn;
         }
     }
 }
