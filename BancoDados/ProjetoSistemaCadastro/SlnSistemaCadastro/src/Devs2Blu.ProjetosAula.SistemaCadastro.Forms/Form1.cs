@@ -40,30 +40,22 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         private void PopulaComboConvenio()
         {
             var listConvenios = ConvenioRepository.FetchAll();
-
-            while (listConvenios.Read())
-            {
-                cboConvenio.Items.Add(listConvenios.GetString("nome"));
-            }
+            cboConvenio.DataSource = new BindingSource(listConvenios, null);
+            cboConvenio.DisplayMember = "nome";
+            cboConvenio.ValueMember = "id";
         }
         #endregion
 
         private void rdFisica_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdFisica.Checked)
-            {
-                lblCGCCPF.Text = "CPF";
-                lblCGCCPF.Visible = true;
-            }
+            lblCGCCPF.Text = "CPF";
+            lblCGCCPF.Visible = true;
         }
 
         private void rdJuridica_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdJuridica.Checked)
-            {
-                lblCGCCPF.Text = "CNPJ";
-                lblCGCCPF.Visible = true;
-            }
+            lblCGCCPF.Text = "CNPJ";
+            lblCGCCPF.Visible = true;
         }
     }
 }

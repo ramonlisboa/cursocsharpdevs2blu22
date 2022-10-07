@@ -68,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +88,15 @@
       <Project>{65eefe8e-a5c9-470b-a2e4-78a175df2615}</Project>
       <Name>Devs2Blu.ProjetosAula.SistemaCadastro.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\img\btnIconInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\img\btnIconExcluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\img\btnIconSalvar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
