@@ -39,7 +39,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.cboConvenio = new System.Windows.Forms.ComboBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtCGCCPF = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,6 +63,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtCGCCPF = new System.Windows.Forms.MaskedTextBox();
             this.gpFormCadastro.SuspendLayout();
             this.gpEnderecoCadastro.SuspendLayout();
             this.gpTipoPessoa.SuspendLayout();
@@ -76,8 +76,8 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // gpFormCadastro
             // 
             this.gpFormCadastro.BackColor = System.Drawing.Color.White;
-            this.gpFormCadastro.Controls.Add(this.btnLimpar);
             this.gpFormCadastro.Controls.Add(this.txtCGCCPF);
+            this.gpFormCadastro.Controls.Add(this.btnLimpar);
             this.gpFormCadastro.Controls.Add(this.txtNome);
             this.gpFormCadastro.Controls.Add(this.gpEnderecoCadastro);
             this.gpFormCadastro.Controls.Add(this.lblCGCCPF);
@@ -190,13 +190,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(250, 20);
             this.txtNome.TabIndex = 12;
-            // 
-            // txtCGCCPF
-            // 
-            this.txtCGCCPF.Location = new System.Drawing.Point(64, 54);
-            this.txtCGCCPF.Name = "txtCGCCPF";
-            this.txtCGCCPF.Size = new System.Drawing.Size(104, 20);
-            this.txtCGCCPF.TabIndex = 13;
             // 
             // label3
             // 
@@ -343,6 +336,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.btnSalvar.Size = new System.Drawing.Size(69, 65);
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnExcluir
             // 
@@ -372,7 +366,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.gridPacientes.Location = new System.Drawing.Point(5, 16);
             this.gridPacientes.Name = "gridPacientes";
             this.gridPacientes.ReadOnly = true;
-            this.gridPacientes.Size = new System.Drawing.Size(403, 320);
+            this.gridPacientes.Size = new System.Drawing.Size(403, 315);
             this.gridPacientes.TabIndex = 0;
             // 
             // menuStrip1
@@ -415,6 +409,14 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
+            // txtCGCCPF
+            // 
+            this.txtCGCCPF.Location = new System.Drawing.Point(65, 54);
+            this.txtCGCCPF.Mask = "000.000.000-00";
+            this.txtCGCCPF.Name = "txtCGCCPF";
+            this.txtCGCCPF.Size = new System.Drawing.Size(100, 20);
+            this.txtCGCCPF.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,7 +457,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         private System.Windows.Forms.Label lblCGCCPF;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox gpEnderecoCadastro;
-        private System.Windows.Forms.TextBox txtCGCCPF;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtNumero;
@@ -481,6 +482,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.MaskedTextBox txtCGCCPF;
     }
 }
 
