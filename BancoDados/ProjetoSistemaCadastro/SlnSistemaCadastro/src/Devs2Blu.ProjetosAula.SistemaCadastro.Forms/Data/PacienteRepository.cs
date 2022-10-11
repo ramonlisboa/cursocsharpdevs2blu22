@@ -11,14 +11,33 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
 {
     public class PacienteRepository
     {
-        public Paciente Save(Paciente paciente)
+        public PessoaRepository PessoaRepository = new PessoaRepository();
+        public EnderecoRepository EnderecoRepository = new EnderecoRepository();
+        public Paciente Save(Paciente paciente, Endereco endereco = null)
         {
             MySqlConnection conn = ConnectionMySQL.GetConnection();
 
             try
             {
 
-                paciente.Pessoa.Id = SavePessoa(paciente, conn);
+                paciente.Pessoa.Id = PessoaRepository.Save(paciente.Pessoa, conn);
+
+                if (paciente.Pessoa.Id != null &&
+                    paciente.Pessoa.Id > 0)
+                {
+                    if (endereco != null)
+                    {
+                        endereco.Pessoa = paciente.Pessoa;
+                        if (!EnderecoRepository.Save(endereco, conn))
+                        {
+                            MessageBox.Show("Ocorreu um erro ao tentar salvar o endereço da Pessoa", "Erro de Ao Salvar Endere~ço", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+
+                    paciente.Id = SavePaciente(paciente, conn);
+                }
+
+                conn.Close();
 
                 return paciente;
             }
@@ -29,14 +48,16 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
             }
         }
 
-        private Int32 SavePessoa(Paciente paciente, MySqlConnection conn)
+        private Int32 SavePaciente(Paciente paciente, MySqlConnection conn)
         {
             try
             {
-                MySqlCommand cmd = new MySqlCommand(SQL_INSERT_PESSOA, conn);
-                cmd.Parameters.Add("@nome", MySqlDbType.VarChar, 50).Value = paciente.Pessoa.Nome;
-                cmd.Parameters.Add("@cgccpf", MySqlDbType.VarChar, 25).Value = paciente.Pessoa.CGCCPF;
-                cmd.Parameters.Add("@tipopessoa", MySqlDbType.Enum).Value = paciente.Pessoa.TipoPessoa;
+                MySqlCommand cmd = new MySqlCommand(SQL_INSERT_PACIENTE, conn);
+                cmd.Parameters.Add("@id_pessoa", MySqlDbType.Int32).Value = paciente.Pessoa.Id;
+                cmd.Parameters.Add("@id_convenio", MySqlDbType.Int32).Value = paciente.Convenio.Id;
+                int nrProntuario;
+                Int32.TryParse($"{DateTime.Now.Millisecond}{DateTime.Now.Second}", out nrProntuario);
+                cmd.Parameters.Add("@numero_prontuario", MySqlDbType.Int32).Value = nrProntuario;
 
                 cmd.ExecuteNonQuery();
                 return (Int32)cmd.LastInsertedId;
@@ -48,13 +69,49 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
             }
         }
 
-        internal MySqlDataReader GetPessoas()
+        public bool Delete(int id)
+        {
+            MySqlConnection conn = ConnectionMySQL.GetConnection();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(SQL_DELETE_PACIENTE, conn);
+                cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (MySqlException myExc)
+            {
+                MessageBox.Show(myExc.Message, "Erro de MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+
+        public MySqlDataReader GetPacientes()
         {
             MySqlConnection conn = ConnectionMySQL.GetConnection();
 
             try
             {
-                MySqlCommand cmd = new MySqlCommand(SQL_SELECT_PESSOAS, conn);
+                MySqlCommand cmd = new MySqlCommand(SQL_SELECT_PACIENTES, conn);
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                return dataReader;
+            }
+            catch (MySqlException myExc)
+            {
+                MessageBox.Show(myExc.Message, "Erro de MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+        public MySqlDataReader GetPacienteById(int idPaciente)
+        {
+            MySqlConnection conn = ConnectionMySQL.GetConnection();
+
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(SQL_SELECT_PACIENTE_BY_ID, conn);
+                cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = idPaciente;
                 MySqlDataReader dataReader = cmd.ExecuteReader();
 
                 return dataReader;
@@ -67,32 +124,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
         }
 
         #region SQLS
-        private const String SQL_INSERT_PESSOA = @"INSERT INTO pessoa
-(nome,
-cgccpf,
-tipopessoa,
-flstatus)
-VALUES
-(@nome,
-@cgccpf,
-@tipopessoa,
-'A')";
-        private const String SQL_INSERT_ENDERECO = @"INSERT INTO endereco
-(id_pessoa,
-CEP,
-rua,
-numero,
-bairro,
-cidade,
-uf)
-VALUES
-(@idPessoa,
-@CEP,
-@rua,
-@numero,
-@bairro,
-@cidade,
-@uf)";
         private const String SQL_INSERT_PACIENTE = @"INSERT INTO paciente
 (id_pessoa,
 id_convenio,
@@ -104,10 +135,33 @@ VALUES
 (@id_pessoa,
 @id_convenio,
 @numero_prontuario,
-@paciente_risco,
+'NÃO',
 'A',
 0)";
-        private const String SQL_SELECT_PESSOAS = @"SELECT id, nome, cgccpf, flstatus from pessoa";
+        private const String SQL_SELECT_PACIENTES = @"SELECT * from paciente";
+        private const String SQL_DELETE_PACIENTE = @"DELETE from paciente WHERE id_pessoa = @id";
+        private const String SQL_SELECT_PACIENTE_BY_ID = @"select p.id,
+	   pa.id as id_paciente,
+       p.nome,
+       p.cgccpf,
+       p.tipopessoa,
+       pa.numero_prontuario,
+       pa.id_convenio,
+       c.nome,
+       e.CEP,
+       e.rua,
+       e.numero,
+       e.bairro,
+       e.cidade,
+       e.uf
+from pessoa p
+join paciente pa 
+	on pa.id_pessoa = p.id
+join convenio c 
+	on pa.id_convenio = c.id
+join endereco e 
+	on e.id_pessoa = p.id
+WHERE p.id = @id";
         #endregion
     }
 }

@@ -18,6 +18,11 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         public MySqlConnection Conn { get; set; }
         public ConvenioRepository ConvenioRepository = new ConvenioRepository();
         public PacienteRepository PacienteRepository = new PacienteRepository();
+        public PessoaRepository PessoaRepository = new PessoaRepository();
+        public EnderecoRepository EnderecoRepository = new EnderecoRepository();
+        public Paciente PacienteForm = new Paciente();
+        public Pessoa PessoaForm = new Pessoa();
+        public Endereco EnderecoForm = new Endereco();
 
         public Form1()
         {
@@ -35,7 +40,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
 
         private void PopulaDataGridPessoa()
         {
-            var listPessoas = PacienteRepository.GetPessoas();
+            var listPessoas = PessoaRepository.GetPessoas();
             gridPacientes.DataSource = new BindingSource(listPessoas, null);
         }
         private bool ValidaFormCadastro()
@@ -61,6 +66,19 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
 
             return true;
         }
+       
+        private void AtualizaCamposForm()
+        {
+            PacienteForm.Pessoa.Nome = txtNome.Text;
+            PacienteForm.Pessoa.CGCCPF = txtCGCCPF.Text.Replace(',', '.');
+            PacienteForm.Convenio.Id = (int)cboConvenio.SelectedValue;
+
+            EnderecoForm.CEP = mskCEP.Text;
+            EnderecoForm.Rua = txtRua.Text;
+            EnderecoForm.Numero = Int32.Parse(txtNumero.Text);
+            EnderecoForm.Bairro = txtBairro.Text;
+
+        }
         #endregion
 
         #region Events
@@ -76,7 +94,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             }*/
             #endregion
             PopulaComboConvenio();
-            PopulaDataGridPessoa();
         }
 
         private void rdFisica_CheckedChanged(object sender, EventArgs e)
@@ -90,27 +107,61 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             lblCGCCPF.Text = "CNPJ";
             lblCGCCPF.Visible = true;
         }
+        
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             if (ValidaFormCadastro())
             {
-                Paciente paciente = new Paciente();
-                paciente.Pessoa.Nome = txtNome.Text;
-                paciente.Pessoa.CGCCPF = txtCGCCPF.Text.Replace(',','.');
-                paciente.Convenio.Id = (int) cboConvenio.SelectedValue;
+                AtualizaCamposForm();
 
                 
-                var pacienteResult = PacienteRepository.Save(paciente);
+                var pacienteResult = PacienteRepository.Save(PacienteForm,EnderecoForm);
                 if (pacienteResult.Pessoa.Id > 0)
                 {
-                    MessageBox.Show($"Pessoa {paciente.Pessoa.Id} - {paciente.Pessoa.Nome} salva com sucesso!", "Adicionar Pessoa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show($"Pessoa {pacienteResult.Pessoa.Id} - {pacienteResult.Pessoa.Nome} salva com sucesso!", "Adicionar Pessoa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     PopulaDataGridPessoa();
                 }
             }
         }
 
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            var index = gridPacientes.CurrentCell.RowIndex;
+            int idPessoa = (int)gridPacientes.Rows[index].Cells["id"].Value;
+            if (PacienteRepository.Delete(idPessoa))
+            {
+                if (EnderecoRepository.Delete(idPessoa))
+                {
+                    if (PessoaRepository.Delete(idPessoa))
+                    {
+                        MessageBox.Show($"Pessoa {idPessoa} excluída com sucesso!", "Excluir Pessoa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+            }
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            PopulaDataGridPessoa();
+        }
 
         #endregion
 
+        private void gridPacientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int idPessoa = (int)gridPacientes.Rows[e.RowIndex].Cells["id"].Value;
+            MySqlDataReader rdrP = PacienteRepository.GetPacienteById(idPessoa);
+
+            while (rdrP.Read())
+            {
+                txtNome.Text = rdrP.GetString("nome");
+                txtCGCCPF.Text = rdrP.GetString("cgccpf");
+                mskCEP.Text = rdrP.GetString("CEP");
+                txtRua.Text = rdrP.GetString("rua");
+                txtNumero.Text = rdrP.GetString("numero");
+                txtBairro.Text = rdrP.GetString("bairro");
+                txtCidade.Text = rdrP.GetString("cidade");
+            }
+        }
     }
 }
