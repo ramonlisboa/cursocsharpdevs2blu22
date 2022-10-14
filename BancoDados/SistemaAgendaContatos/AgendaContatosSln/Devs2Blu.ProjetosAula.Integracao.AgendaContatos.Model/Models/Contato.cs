@@ -26,19 +26,19 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.Models
 
         }
 
-        public Contato(int id, string nome, string telefone, string celular, string email, string rua, int numero, string bairro, string cidade, string uF, StatusEnum status)
+        public Contato(Int32? id, String nome, String telefone, String celular, String email, String rua, Int32? numero, String bairro, String cidade, String uF, StatusEnum? status)
         {
-            Id = id;
+            Id = (int)id;
             Nome = nome;
             Telefone = telefone;
             Celular = celular;
             Email = email;
             Rua = rua;
-            Numero = numero;
+            Numero = (int)numero;
             Bairro = bairro;
             Cidade = cidade;
             UF = uF;
-            Status = status;
+            Status = (StatusEnum)status;
         }
     }
 }

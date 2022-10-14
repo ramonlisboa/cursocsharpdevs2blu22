@@ -39,6 +39,21 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             this.rdInativo = new System.Windows.Forms.RadioButton();
             this.rdAtivo = new System.Windows.Forms.RadioButton();
             this.gridContatos = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.mskTel = new System.Windows.Forms.MaskedTextBox();
+            this.mskCel = new System.Windows.Forms.MaskedTextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtRua = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridContatos)).BeginInit();
@@ -47,6 +62,21 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.btnExcluir);
+            this.groupBox1.Controls.Add(this.btnLimpar);
+            this.groupBox1.Controls.Add(this.txtCidade);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.txtNumero);
+            this.groupBox1.Controls.Add(this.txtBairro);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txtRua);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.mskCel);
+            this.groupBox1.Controls.Add(this.mskTel);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.btnSalvar);
             this.groupBox1.Controls.Add(this.cboEstados);
@@ -55,7 +85,7 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 11);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(757, 92);
+            this.groupBox1.Size = new System.Drawing.Size(757, 103);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro Contatos";
@@ -63,7 +93,7 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 24);
+            this.label1.Location = new System.Drawing.Point(6, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
@@ -71,15 +101,15 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(57, 17);
+            this.txtNome.Location = new System.Drawing.Point(38, 18);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(166, 20);
+            this.txtNome.Size = new System.Drawing.Size(159, 20);
             this.txtNome.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 40);
+            this.label2.Location = new System.Drawing.Point(342, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 2;
@@ -88,10 +118,10 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             // cboEstados
             // 
             this.cboEstados.FormattingEnabled = true;
-            this.cboEstados.Location = new System.Drawing.Point(57, 40);
+            this.cboEstados.Location = new System.Drawing.Point(369, 43);
             this.cboEstados.Name = "cboEstados";
             this.cboEstados.Size = new System.Drawing.Size(88, 21);
-            this.cboEstados.TabIndex = 3;
+            this.cboEstados.TabIndex = 8;
             // 
             // btnSalvar
             // 
@@ -99,10 +129,10 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             this.btnSalvar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSalvar.Location = new System.Drawing.Point(654, 58);
+            this.btnSalvar.Location = new System.Drawing.Point(678, 71);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(97, 28);
-            this.btnSalvar.TabIndex = 4;
+            this.btnSalvar.Size = new System.Drawing.Size(73, 28);
+            this.btnSalvar.TabIndex = 12;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -112,9 +142,9 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Controls.Add(this.rdAtivo);
             this.groupBox2.Controls.Add(this.rdInativo);
-            this.groupBox2.Location = new System.Drawing.Point(597, 9);
+            this.groupBox2.Location = new System.Drawing.Point(628, 9);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(154, 44);
+            this.groupBox2.Size = new System.Drawing.Size(123, 44);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Status";
@@ -127,8 +157,7 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             this.rdInativo.Location = new System.Drawing.Point(6, 19);
             this.rdInativo.Name = "rdInativo";
             this.rdInativo.Size = new System.Drawing.Size(57, 17);
-            this.rdInativo.TabIndex = 0;
-            this.rdInativo.TabStop = true;
+            this.rdInativo.TabIndex = 10;
             this.rdInativo.Text = "Inativo";
             this.rdInativo.UseVisualStyleBackColor = false;
             // 
@@ -136,11 +165,12 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             // 
             this.rdAtivo.AutoSize = true;
             this.rdAtivo.BackColor = System.Drawing.Color.Green;
+            this.rdAtivo.Checked = true;
             this.rdAtivo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rdAtivo.Location = new System.Drawing.Point(99, 19);
+            this.rdAtivo.Location = new System.Drawing.Point(69, 19);
             this.rdAtivo.Name = "rdAtivo";
             this.rdAtivo.Size = new System.Drawing.Size(49, 17);
-            this.rdAtivo.TabIndex = 1;
+            this.rdAtivo.TabIndex = 11;
             this.rdAtivo.TabStop = true;
             this.rdAtivo.Text = "Ativo";
             this.rdAtivo.UseVisualStyleBackColor = false;
@@ -148,10 +178,140 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
             // gridContatos
             // 
             this.gridContatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridContatos.Location = new System.Drawing.Point(24, 120);
+            this.gridContatos.Location = new System.Drawing.Point(16, 120);
             this.gridContatos.Name = "gridContatos";
             this.gridContatos.Size = new System.Drawing.Size(749, 282);
             this.gridContatos.TabIndex = 1;
+            this.gridContatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridContatos_CellClick);
+            this.gridContatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridContatos_CellDoubleClick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(203, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(22, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Tel";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(306, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(22, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Cel";
+            // 
+            // mskTel
+            // 
+            this.mskTel.Location = new System.Drawing.Point(223, 17);
+            this.mskTel.Mask = "(00) 0000-0000";
+            this.mskTel.Name = "mskTel";
+            this.mskTel.Size = new System.Drawing.Size(78, 20);
+            this.mskTel.TabIndex = 2;
+            // 
+            // mskCel
+            // 
+            this.mskCel.Location = new System.Drawing.Point(330, 17);
+            this.mskCel.Mask = "(00) 00000-0000";
+            this.mskCel.Name = "mskCel";
+            this.mskCel.Size = new System.Drawing.Size(84, 20);
+            this.mskCel.TabIndex = 3;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(456, 15);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(166, 20);
+            this.txtEmail.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(418, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Email";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(5, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Rua";
+            // 
+            // txtRua
+            // 
+            this.txtRua.Location = new System.Drawing.Point(38, 44);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(114, 20);
+            this.txtRua.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(187, 48);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Bairro";
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Location = new System.Drawing.Point(227, 44);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(114, 20);
+            this.txtBairro.TabIndex = 7;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Location = new System.Drawing.Point(158, 44);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(26, 20);
+            this.txtNumero.TabIndex = 6;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(462, 49);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Cidade";
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(500, 44);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(122, 20);
+            this.txtCidade.TabIndex = 9;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Yellow;
+            this.btnLimpar.Location = new System.Drawing.Point(6, 76);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(63, 23);
+            this.btnLimpar.TabIndex = 17;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.Red;
+            this.btnExcluir.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnExcluir.Location = new System.Drawing.Point(76, 76);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 18;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // Form1
             // 
@@ -185,6 +345,21 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos
         private System.Windows.Forms.RadioButton rdInativo;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.DataGridView gridContatos;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtRua;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.MaskedTextBox mskCel;
+        private System.Windows.Forms.MaskedTextBox mskTel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }
 
