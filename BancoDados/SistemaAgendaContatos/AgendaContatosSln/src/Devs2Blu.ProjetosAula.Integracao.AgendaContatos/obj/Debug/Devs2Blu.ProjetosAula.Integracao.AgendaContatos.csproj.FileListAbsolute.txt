@@ -1,3 +1,10 @@
+C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.csproj.AssemblyReference.cache
+C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.exe.config
+C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.CompromissosForm.resources
+C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Form1.resources
+C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Properties.Resources.resources
+C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.csproj.GenerateResource.cache
+C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.csproj.CoreCompileInputs.cache
 C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\bin\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.exe.config
 C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\bin\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.exe
 C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\bin\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.pdb
@@ -15,12 +22,6 @@ C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.Proj
 C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\bin\Debug\System.Numerics.Vectors.dll
 C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\bin\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.pdb
 C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\bin\Debug\MySql.Data.xml
-C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.csproj.AssemblyReference.cache
-C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.exe.config
-C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Form1.resources
-C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Properties.Resources.resources
-C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.csproj.GenerateResource.cache
-C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.csproj.CoreCompileInputs.cache
 C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.csproj.CopyComplete
 C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.exe
 C:\devs2blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.pdb

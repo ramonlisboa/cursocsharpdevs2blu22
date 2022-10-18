@@ -1,5 +1,6 @@
 ﻿using Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.Enum;
 using Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.Models;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,5 +27,27 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Data
 
             return contato;
         }
+
+        public List<Contato> GetContatosCbo()
+        {
+            List <Contato> listContato = new List<Contato>();
+            Contato itemZero = new Contato(0, "Selecione...");
+            listContato.Add(itemZero);
+
+            var rdr = base.Get(SQL_CONTATOS_CBO);
+            while (rdr.Read())
+            {
+                Contato contato = new Contato(rdr.GetInt32("id"), rdr.GetString("nome"));
+                listContato.Add(contato);
+            }
+
+            return listContato;
+        }
+
+
+        #region SQLs
+        const string SQL_CONTATOS_CBO = "SELECT id, concat(nome,' (',  telefone, ')') as nome from contatos;";
+
+        #endregion
     }
 }

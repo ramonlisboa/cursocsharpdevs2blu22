@@ -47,8 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompromissosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompromissosForm.Designer.cs">
+      <DependentUpon>CompromissosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\BaseRepository.cs" />
     <Compile Include="Data\ConnectionMySQL.cs" />
+    <Compile Include="Data\CompromissoRepository.cs" />
     <Compile Include="Data\ContatoRepository.cs" />
     <Compile Include="Data\EstadoRepository.cs" />
     <Compile Include="Form1.cs">
@@ -59,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CompromissosForm.resx">
+      <DependentUpon>CompromissosForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

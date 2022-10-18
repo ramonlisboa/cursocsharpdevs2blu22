@@ -40,5 +40,11 @@ namespace Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.Models
             UF = uF;
             Status = (StatusEnum)status;
         }
+
+        public Contato(int id, string nome)
+        {
+            Id = id;
+            Nome = nome;
+        }
     }
 }

@@ -162,6 +162,7 @@ status = '{Contato.Status}'";
         {
             EstadoRepository = new EstadoRepository();
             ContatoRepository = new ContatoRepository();
+            Contato = new Contato();
             PopulaComboEstados();
         }
         private void Form1_Activated(object sender, EventArgs e)
@@ -180,6 +181,7 @@ status = '{Contato.Status}'";
                 {
                     SalvaContato();
                 }
+                Contato = new Contato();
                 LimparCampos();
             }
         }
@@ -211,6 +213,12 @@ status = '{Contato.Status}'";
             Contato = new Contato();
             Contato.Id = (int)gridContatos.Rows[e.RowIndex].Cells["id"].Value;
             Contato.Nome = (string)gridContatos.Rows[e.RowIndex].Cells["nome"].Value;
+        }
+
+        private void compromissosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CompromissosForm comForm = new CompromissosForm();
+            comForm.Show();
         }
     }
 }
