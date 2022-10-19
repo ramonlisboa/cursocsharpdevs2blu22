@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.ProjetosAula.Integracao.AgendaContatos", "src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.csproj", "{1B6ED6FA-B5B5-4AC4-BF30-4A651499465F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model", "Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.csproj", "{BC817720-B162-4A0D-8E8A-B43360B96E8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B6ED6FA-B5B5-4AC4-BF30-4A651499465F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6ED6FA-B5B5-4AC4-BF30-4A651499465F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6ED6FA-B5B5-4AC4-BF30-4A651499465F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6ED6FA-B5B5-4AC4-BF30-4A651499465F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC817720-B162-4A0D-8E8A-B43360B96E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC817720-B162-4A0D-8E8A-B43360B96E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC817720-B162-4A0D-8E8A-B43360B96E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC817720-B162-4A0D-8E8A-B43360B96E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {849F2F6C-28A3-4DEB-B52B-7007BD811486}
+	EndGlobalSection
+EndGlobal
