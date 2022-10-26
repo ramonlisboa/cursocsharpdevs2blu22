@@ -14,13 +14,27 @@ addEventListener('load', (e) => {
             $('#endereco').style.display = 'block';
             var urlCep = URL_VIACEP.replace('@CEP', valorCampo);
             getJson(urlCep)
-            .then((resp) =>{
-                
+            .then((resp) => {
+                console.log(resp);
+                $('#rua').value = resp.logradouro;
+                $('#bairro').value = resp.bairro;
+                $('#cidade').value = resp.localidade;
+                $('#uf').value = resp.uf;
+                e.target.value = resp.cep;
+                $('#numero').focus();
             });
         }
+    });
 
+    $('#btn-salvar').addEventListener('click', (e) => {
+        console.log('click')
     });
 });
+
+const validaFormulario = () => {
+    if($('#nome').value === '')
+        return false;
+};
 
 function getJson(url) {
     return fetch(url)
