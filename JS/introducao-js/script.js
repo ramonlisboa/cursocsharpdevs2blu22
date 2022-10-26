@@ -1,3 +1,38 @@
+// Variáveis
+const URL_VIACEP = 'https://viacep.com.br/ws/@CEP/json/';
+
+// Carregar a página
+addEventListener('load', (e) => {
+    console.log('Sistema carregado...');
+    $('#bloco').style.display = 'none';
+
+    // Registra evento CEP
+    $('#cep').addEventListener('blur',(e) => {
+        var valorCampo = e.target.value;
+        console.log(`O valor digitado foi '${valorCampo}'`)
+        if(valorCampo.length >= 8){
+            $('#endereco').style.display = 'block';
+            var urlCep = URL_VIACEP.replace('@CEP', valorCampo);
+            getJson(urlCep)
+            .then((resp) =>{
+                
+            });
+        }
+
+    });
+});
+
+function getJson(url) {
+    return fetch(url)
+           .then((resposta) => resposta.json());
+}
+
+function $(querySelector) {
+    return document.querySelector(querySelector);
+}
+
+/*
+//--- Introdução
 console.log('Script loaded.');
 var nome, idade;
 
@@ -23,3 +58,4 @@ bloco.addEventListener('mouseout',function(e){
 var textoBloco = document.querySelector('#bloco span');
 
 textoBloco.style.color = '#fff';
+*/
