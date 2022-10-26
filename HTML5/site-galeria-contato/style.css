@@ -26,6 +26,13 @@ body {
     margin-right: auto;
 }
 
+.flex{
+    display: flex;
+} 
+
+.justify-between{
+    justify-content: space-between;
+}
 /* Header */
 header#topo {
     height: 80px;
@@ -84,6 +91,10 @@ nav .menu {
     color: red;
     text-shadow: 1px 2px 2px rgb(245, 113, 48);
     font-weight: 500;
+}
+
+h1.title-menu {
+    display: none;
 }
 
 /* Banner */
@@ -179,9 +190,135 @@ main#home {
 .content-home img {
     width: 80px;
     height: 100px;
-    display: block
+    display: block;
+    margin-top: .2em;
 }
 
 .content-home figcaption {
     width: 80%;
+}
+
+.content-home figcaption h3 {
+    display: block;
+    background-color: #8fbfef;
+    padding-left: 1em;
+}
+
+.content-home figcaption p {
+    font-size: 12px;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+.link-none {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: .3em;
+}
+
+.link-none:hover {
+    background-color: #494848;
+    color: #fff;
+}
+
+.content-home img:hover {
+    border: 3px solid #fff;
+    border-radius: 3px 8px 3px;
+    box-shadow: 3px 3px 4px #111;
+}
+
+/* Footer */
+footer {
+    display: block;
+    width: 100vw;
+    margin-top: 2em;
+    border-top: 4px solid #2a6eb3;
+    height: auto;
+    padding-top: 1em;
+}
+
+#infos-footer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-footer {
+    width: 30%;
+    padding-left: 1em;
+}
+.logo-f {
+    width: 90%;
+}
+.logo-f img{
+    width: 64px;
+}
+
+.social-footer {
+    width: 40%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-right: .5em;
+}
+.social-item {
+    display: block;
+    float: left;
+    margin-top: .3em;
+    margin-left: .5em;
+    width: 100%;
+}
+
+.social-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#infos-footer .contatos {
+    display: block;
+    width: 40%;
+}
+
+#infos-footer .contatos .contatos-item {
+    float: right;
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    padding-left: 1em;
+    margin-top: .5em;
+}
+
+#copy {
+    display: block;
+    width: 100vw;
+    border-top: 1px solid #2a6eb3;
+    text-align: center;
+    margin-top: 2em;
+}
+
+#copy .copy-text {
+    font-size: 10px;
+    font-style: italic;
+}
+
+i {
+    margin-right: .5em;
+}
+
+
+@media (min-width:1024px) and (max-width: 2800px) {
+    #banner {
+        height: 70vh;
+    }
+    .banner-container img {
+        height: 100%;
+    }   
 }
