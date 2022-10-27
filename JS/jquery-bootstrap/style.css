@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/* Introducao - JQUery */
 #form {
     border: 3px solid #333;
     padding: 1em;
@@ -42,4 +42,14 @@
     100% {
         background-size: 0% 300%;
     }
+}
+
+/* Introducao Bootstrap */
+.bg-customized {
+    background-color: blueviolet;
+}
+
+#conteudo {
+    width: 95vw;
+    margin: 1em auto;
 }
