@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.bg-custom {
+    background: linear-gradient(rgb(212, 77, 235), rgb(149, 31, 170));
+}
+
+.carousel-item img {
+    height: 50vh;
+}
+
+.text-justify {
+    text-align: justify;
+}
