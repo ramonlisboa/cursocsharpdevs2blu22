@@ -3,7 +3,6 @@
 header {
     display: block;
     width: 100vw;
-    height: 60vh;
     position: relative;
 }
 
@@ -17,13 +16,13 @@ header {
 #estrelas-img {
     position: absolute;
     animation: estrela-animation 30s ease-in-out infinite;
-    opacity: .8;
+    opacity: .9;
 }
 
 #card-estrela {
     display: flex;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
 
