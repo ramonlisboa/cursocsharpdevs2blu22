@@ -6,6 +6,12 @@ header {
     position: relative;
 }
 
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: linear-gradient(#111, #888, #fff) no-repeat;
+}
+
 #estrelas {
     height: 60vh;
     box-sizing: border-box;

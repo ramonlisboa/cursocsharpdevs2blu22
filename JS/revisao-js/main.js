@@ -5,6 +5,7 @@ const usuario = {
 }
 
 const LOGADO = 'userLogado';
+const USER = 'user';
 
 $(document).ready(()=>{
     console.log('JQuery loaded.');
@@ -12,16 +13,27 @@ $(document).ready(()=>{
     verificaLogin();
 });
 
-
-
 // Functions
 
-const realizaLogin = (user) => {
-
+const getPagina = (page, target) => {
+    $.ajax({
+        url: page,
+        dataType: 'html',
+        success: (pResponse) => {
+            $(target).html(pResponse);
+        }
+    });
 }
 
-const realizaLogoff = (user) => {
+const realizaLogin = (user) => {
+    localStorage.setItem(LOGADO, 'true');
+    localStorage.setItem(USER, JSON.stringify(user));
+    window.location.href = 'dashboard.html';
+}
 
+const realizaLogoff = () => {
+    localStorage.removeItem(LOGADO);
+    localStorage.removeItem(USER);
 }
 
 const verificaLogin = () => {
