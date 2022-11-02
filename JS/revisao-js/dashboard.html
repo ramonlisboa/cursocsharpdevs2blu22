@@ -65,7 +65,9 @@
                 </div>
                 <div class="row my-2">
                     <div class="form-group d-flex">
-                        <label for="" class="col-2"></label>
+                        <label for="" class="col-2">
+                          <input type="hidden" name="id" id="id">
+                        </label>
                         <button id="btn-salvar" class="col-10 btn btn-block btn-success">Salvar</button>
                     </div>
                 </div>
@@ -86,8 +88,10 @@
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>Nome</th>
                     <th>Email</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody class="text-primary" id="lista-contatos"></tbody>
