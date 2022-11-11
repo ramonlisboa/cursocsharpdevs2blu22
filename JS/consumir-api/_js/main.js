@@ -14,9 +14,10 @@ const getPokemonList = (offset=null,limit=null) => {
 const getPokemon = () => {
     getPagina('getPokemon.html','main');
     $.ajax({
-        url: URL_API,
+        url: `${URL_API}?offset=1&limit=500`,
         dataType: 'json',
         success: (data) => {
+            console.log(data);
             let listPkm = document.createElement('div');
             $(listPkm).addClass('row');
             $('#getPokemon').html(listPkm);
