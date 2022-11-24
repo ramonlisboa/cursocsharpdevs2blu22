@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;   
+    background-color: #f0e8e8;
+}
+
+/* Header */
+header {
+    border-bottom: 2px solid #111;
+    width: 100vw;
+    height: 100px;
+    padding: 0.5em;
+    background-color: rgb(116, 12, 12);
+}
+
+figure {
+    height: 80px;
+    display: inline-flex;
+    line-height: 100px;
+}
+
+header > figure {
+    color: #fff;
+}
+
+header figure img {
+    width: 64px;
+    height: 64px;
+    line-height: 100px;
+}
+
+header figure figcaption {
+    margin-left: 1em;
+    font-size: 14px;
+}
+
+/* Main */
+
+.wrapper {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+main {
+    display: block;
+    border: 1px solid #111;
+    box-shadow: 2px 1px 3px #111;
+    background-color: #fff;
+}
+
+h3.titulo-texto {
+    border-bottom: 1px solid #000;
+    padding: .3em;
+}
+
+div.conteudo {
+    padding: .5em;
+    text-align: justify;
+    margin-top: 1em;
+}
+
+div.conteudo p {
+    text-indent: 1.5em;
+}
+
+/* Footer */
+footer {
+    width: 100vw;
+    border-top: 3px solid blue;
+    padding: 0.5em;
+    background-color: rgb(116, 12, 12);
+    color: #fff;
+}
+
+footer figure img {
+    width: 32px;
+    height: 32px;
+    line-height: 80px;
+    display: block;
+}
+
+footer figure figcaption {
+    margin-left: .5em;
+    line-height: 60px;
+}
+
+footer figure figcaption h2 {
+    font-size: 10px;
+}
+
+/* Credits */
+
+#credits {
+    width: 100vw;
+    text-align: center;
+    font-size: 8px;
+}
+
+#credits a {
+    font-style: italic;
+}

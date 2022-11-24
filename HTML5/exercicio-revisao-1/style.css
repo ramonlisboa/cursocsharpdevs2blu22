@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+    margin:0;
+}
+header {
+    width: 100vw;
+    margin-bottom: 1em;
+}
+nav {
+    margin-bottom: 1em;
+    width: 100vw;
+    height: 80px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1em;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgb(61, 57, 57);
+}
+
+nav h1 {
+    font-weight: 700;
+    text-shadow: 1px 2px 2px yellow;
+    color: orange
+}
+
+#destaque{
+    display: block;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background: url("_img/.lista-destaque li a:hover destaque.jpg") no-repeat;
+    background-position: 70% 10%;
+    width: 92vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    color: #fff;
+}
+
+#destaque h2 {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.4);
+    text-shadow: 1px 2px 2px #111;
+    margin-bottom: 1em;
+}
+
+#conteudo-destaque {
+    display: block;
+    width: 100%;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    text-align: justify;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+/* Main */
+main {
+    display: block;
+    border: 1px solid #000;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px 4px 6px;
+    padding: .5em;
+}
+
+.lista-destaque {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-destaque li {
+    display: block;
+    margin-bottom: .3em;
+    padding: .2em;
+}
+
+.lista-destaque li a {
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    display: block;
+}
+
+.lista-destaque li a:hover {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.lista-destaque li:hover {
+    background-color: orange;
+    color: #111;
+    text-shadow: 2px 2px 2px yellow;
+}

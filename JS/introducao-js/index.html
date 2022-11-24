@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hidden" id="bloco">
+        <span>bloco</span>
+    </div>
+
+    <div id="formulario">
+        <header>
+            <h2>Contato</h2>
+        </header>
+        <div class="container">
+            <fieldset class="form-contato">
+                <legend>Formulário de Contato</legend>
+                <form onsubmit="return false;">
+                    <div class="control-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" class="control">
+                    </div>
+                    <div class="control-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" class="control">
+                    </div>
+                    <div class="control-group">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" class="control">
+                    </div>
+                    <div id="endereco">
+                        <div class="control-group">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="rua" class="control">
+                        </div>
+                        <div class="control-group">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" class="control">
+                        </div>
+                        <div class="control-group">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" class="control">
+                        </div>
+                        <div class="control-group">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" class="control">
+                        </div>
+                        <div class="control-group">
+                            <label for="uf">UF</label>
+                            <input type="text" id="uf" class="control">
+                        </div>
+                    </div>
+                    <div class="control-group controles-form">
+                        <button class="btn btn-success" id="btn-salvar">Salvar</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const NOME_SITE = 'Introdução ao JS';
+        console.log(NOME_SITE)
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

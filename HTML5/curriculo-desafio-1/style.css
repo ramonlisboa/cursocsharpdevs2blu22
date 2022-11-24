@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+
+* {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Header */
+header#topo {
+    height: 80px;
+    width: 100vw;
+    padding: .5em;
+    border-bottom: 1px solid #000;
+}
+
+#topo-logo {
+    display: flex;
+    margin-left: 2em;
+}
+#topo-logo img {
+    width: 64px;
+}
+#topo-logo figcaption{
+    margin-left: 1em;
+    margin-top: 1em;
+}
+#topo-logo h2 {
+    font-style: italic;
+    text-shadow: 1px 1px 2px #000;
+}
+#topo-logo h4 {
+    font-style: italic;
+    color: blue;
+}
+
+/* Main */
+
+.wrapper {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    border: 1px solid #000;
+    margin-top: 3em;
+    border-radius: 16px 6px 10px 1px;
+    box-shadow: 2px 2px 4px;
+}
+
+header#apresentacao {
+    padding-top: .5em;
+    padding-bottom: .2em;
+    border-bottom: 1px solid #000;
+    height: 50px;
+    width: 100%;
+}
+
+#perfil-foto {
+    display: flex;
+    margin-left: 2em;
+}
+#perfil-foto img {
+    width: 64px;
+}
+
+/* Sections */
+#pessoais {
+    text-align: center;
+}
+
+#pessoais .contatos {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.contatos {
+    margin-left: .3em;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#formacao {
+    background-color: blue;
+    color: #fff;
+    padding-left: 2em;
+}
+
+#formacao:hover {
+    color: yellow;
+}
+
+#dados-pessoais {
+    margin-bottom: 1em;
+    border-bottom: 1px dashed #000;
+}
+
+.columns {
+    width: 45%;
+    display: block;
+    margin-left: 3%;
+    float: left;
+}
+
+.two-columns {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.two-columns ul {
+    list-style: none;
+    padding:0;
+}
+
+.two-columns:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.experiencias-container {
+    margin-bottom: .4em;
+}
+
+.experiencias-container h4 {
+    width: 100%;
+    background-color: #8c8a8a;
+    color: #fff;
+    padding-left: .5em;
+}
+
+.experiencias-container p,i{
+    margin-left: .3em;
+}
+
+#hard-skills:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#soft-skills:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+#hard-skills,
+#soft-skills {
+    padding: .3em;
+}
+
+.skills-list li {
+    border-bottom: 1px solid purple;
+}
+
+.skills-list li:last-child {
+    border-bottom: none;
+}
+
+.skills-container {
+    display: block;
+    padding: .3em;
+    font-weight: 500;
+}
+
+.skill-level {
+    font-style: italic;
+    font-size: 12px;
+}

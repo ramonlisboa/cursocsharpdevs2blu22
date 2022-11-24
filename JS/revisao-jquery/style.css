@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.bg-pkmn-theme1 {
+    background: linear-gradient(0.25turn, #ee2d2d, #f34646, #f14444);
+    /*linear-gradient(#ee2d2d,#f12929); */
+}

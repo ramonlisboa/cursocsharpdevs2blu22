@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin-Padding-Display</title>
+</head>
+<body>
+    <div class="container-pai">
+        <div class="cubo bg-red"></div>
+        <div class="cubo bg-yellow"></div>
+        <div class="cubo bg-blue"></div>
+        <div class="cubo bg-green"></div>
+    </div>
+
+    <div class="container-position">
+        <div class="cubo bg-red"></div>
+        <div class="cubo bg-blue"></div>
+        <div class="cubo bg-yellow"></div>
+        <div class="cubo bg-green fixed"></div>
+    </div>
+
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        .container-position .cubo.bg-red {
+            position: absolute;
+            top: 1px;
+            left: 1px;
+        }
+        .cubo.bg-green.fixed {
+            position: fixed;
+            bottom:-10px;
+            right: -10px;
+            height: 300px;
+            width: 200px;
+        }
+
+        .cubo.bg-green.fixed:hover {
+            height: 100px;
+            width: 100px;
+            animation: ease-in 2s both ;
+        }
+
+        .container-position {
+            position: relative;
+            border: 3px solid blue;
+            width: 600px;
+            height: 400px;
+            padding: 3em 1em;
+            background-color: #fff;
+            margin-top: 5em;
+            /* display: none; */
+        }
+
+        .cubo {
+            position: static; /*Position Default*/
+            display: inline-block;
+            border: 1px solid purple;
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin: .5em .3em;
+        }
+
+        .container-pai {
+            border: 3px solid blue;
+            width: 600px;
+            height: 400px;
+            padding: 3em 1em;
+            background-color: #fff;
+            /* display: none; */
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+        .bg-blue {
+            background-color: blue;
+        }
+        .bg-yellow {
+            background-color: yellow;
+        }
+        .bg-green {
+            background-color: green;
+        }
+
+        
+
+    </style>
+</body>
+</html>
