@@ -19,8 +19,12 @@ const init = () => {
 }
 
 const initializeServices = () => {
+    // Carregar/Armazenar Pokemons da API
+    atualizarListaPKMNStorage();
+
     // * Destaques
-    getAPI(URL_API_PKMN, fillDestaques);
+    fillDestaques();
+    
 
 }
 

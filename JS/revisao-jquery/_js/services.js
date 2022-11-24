@@ -21,15 +21,21 @@ const stg = {
 /*
  * Services APIs
 */
-const URL_API_PKMN = 'https://pokeapi.co/api/v2/pokemon/';
+// const URL_API_PKMN = 'https://pokeapi.co/api/v2/pokemon/';
+const URL_API_PKMN = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20';
 
 
 const getAPI = (url, fnCallBack) => {
-    $.ajax({
+    return $.ajax({
         url: url,
         dataType: 'json',
         success: (data) => fnCallBack(data)
     });
+}
+
+const getInfosAPIPromise = async (url) => {
+    return fetch(url)
+                .then(resp => resp.json());
 }
 
 /*
