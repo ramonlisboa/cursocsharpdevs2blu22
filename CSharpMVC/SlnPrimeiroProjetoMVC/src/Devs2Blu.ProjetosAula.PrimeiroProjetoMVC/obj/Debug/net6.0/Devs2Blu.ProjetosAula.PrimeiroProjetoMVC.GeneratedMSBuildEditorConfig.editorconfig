@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\devs2blu\CSharpMVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/devs2blu/CSharpMVC/SlnPrimeiroProjetoMVC/src/Devs2Blu.ProjetosAula.PrimeiroProjetoMVC/Views/Admin/CardsResultados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FyZHNSZXN1bHRhZG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/devs2blu/CSharpMVC/SlnPrimeiroProjetoMVC/src/Devs2Blu.ProjetosAula.PrimeiroProjetoMVC/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -16,5 +16,12 @@ namespace Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Controllers
         {
             return View();
         }
+
+        [Route("cards")]
+        public PartialViewResult CardsResultados()
+        {
+            //var result = Service.GetLista();
+            return PartialView();
+        }
     }
 }

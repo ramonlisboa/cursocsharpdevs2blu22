@@ -5,3 +5,19 @@
 
 <h1>@ViewData["Title"]</h1>
 
+<div class="container my-4 mb-2" id="conteudo-cards"></div>
+
+@section Scripts {
+
+<script type="text/javascript">
+    $("document").ready(()=>{
+        $.ajax({
+                url: '@Url.Action("CardsResultados","Admin")',
+            dataType: 'html',
+            success: (response) => {
+                $('#conteudo-cards').html(response);
+            }
+        });
+    });
+    </script>
+}
