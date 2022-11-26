@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kaWNhZG9yZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/devs2blu/CSharpMVC/SlnPrimeiroProjetoMVC/src/Devs2Blu.ProjetosAula.PrimeiroProjetoMVC/Views/ConsultaApi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VsdGFBcGlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/devs2blu/CSharpMVC/SlnPrimeiroProjetoMVC/src/Devs2Blu.ProjetosAula.PrimeiroProjetoMVC/Views/Home/Cadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
