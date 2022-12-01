@@ -1,0 +1,18 @@
+﻿@model List< Devs2Blu.ProjetosAula.CSharpMVCRevisao.Models.DTOAPI.CardDTO>
+
+@foreach (var item in Model)
+{
+    <div class="card" style="width: 15rem;">
+        <div class="card-header">
+            <img src="@item.Card_Images[0].Image_Url" class="card-img-top">
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between">
+                    <span class="badge bg-black text-white">@item.Id</span>
+                    <span>@item.Name</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+}
