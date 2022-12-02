@@ -29,6 +29,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="CardApi" asp-action="Index">Lista de Cards</a>
                         </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input id="input-search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="btn-search" class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -46,6 +50,7 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/scripts.js" asp-append-version="true"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

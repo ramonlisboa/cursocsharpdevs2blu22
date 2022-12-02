@@ -7,13 +7,7 @@
 @section Scripts {
     <script type="text/javascript">
         $(document).ready(()=>{
-            $.ajax({
-                url: '@Url.Action("LoadListCards")',
-                dataType: 'html',
-                success: (htmlPartialView) => {
-                    $('#content-list').html(htmlPartialView);
-                }
-            });
+            getView('cards', 'loadcards', '#content-list');
         })  ;  
     </script>
 }

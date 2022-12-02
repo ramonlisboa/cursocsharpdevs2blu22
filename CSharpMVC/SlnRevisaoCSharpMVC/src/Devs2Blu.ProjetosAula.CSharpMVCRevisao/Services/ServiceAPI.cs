@@ -14,15 +14,17 @@ namespace Devs2Blu.ProjetosAula.CSharpMVCRevisao.Services
 
         public async Task<List<CardDTO>> GetListCards()
         {
-            var objJSONResponse = await Get<GetListDataCardsDTO>(URL_API);
+            var objJSONResponse = await Get<GetListDataCardsDTO>(URL_API_PT);
             var listCards = objJSONResponse.Data;
             return listCards;
         }
 
-        public async Task<CardDTO> GetCardByName(string name)
+        public async Task<List<CardDTO>> GetCardByName(string name)
         {
-            var urlSerach = $"{URL_API}?name={name}";
-            return await Get<CardDTO>(urlSerach);
+            var urlSearch = $"{URL_API}?name={name}";
+            var objJSONResponse = await Get<GetListDataCardsDTO>(urlSearch);
+            var listCards = objJSONResponse.Data;
+            return listCards;
         }
 
 
@@ -65,6 +67,7 @@ namespace Devs2Blu.ProjetosAula.CSharpMVCRevisao.Services
         #region CONSTS
 
         private const string URL_API = "https://db.ygoprodeck.com/api/v7/cardinfo.php";
+        private const string URL_API_PT = "https://db.ygoprodeck.com/api/v7/cardinfo.php?language=pt";
 
         #endregion
     }

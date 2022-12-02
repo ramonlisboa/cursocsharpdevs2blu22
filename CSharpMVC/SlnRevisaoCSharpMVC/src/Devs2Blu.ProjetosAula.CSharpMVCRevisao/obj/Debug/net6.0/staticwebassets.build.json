@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nbn3eBUaCfu2hDA4+2Vt+4G4uWVQHk6AEK2j7hl1Fi8=",
+  "Hash": "zW11w/L5d2uL5TiSI9eSaOcTDaEWN2HWrgx4jObNzQ4=",
   "Source": "Devs2Blu.ProjetosAula.CSharpMVCRevisao",
   "BasePath": "_content/Devs2Blu.ProjetosAula.CSharpMVCRevisao",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\devs2blu\\CSharpMVC\\SlnRevisaoCSharpMVC\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\wwwroot\\js\\scripts.js",
+      "SourceId": "Devs2Blu.ProjetosAula.CSharpMVCRevisao",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\devs2blu\\CSharpMVC\\SlnRevisaoCSharpMVC\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\wwwroot\\",
+      "BasePath": "_content/Devs2Blu.ProjetosAula.CSharpMVCRevisao",
+      "RelativePath": "js/scripts.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
       "Identity": "C:\\devs2blu\\CSharpMVC\\SlnRevisaoCSharpMVC\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\wwwroot\\js\\site.js",

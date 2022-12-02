@@ -1,4 +1,5 @@
 ﻿using Devs2Blu.ProjetosAula.CSharpMVCRevisao.Models;
+using Devs2Blu.ProjetosAula.CSharpMVCRevisao.Models.DTOAPI;
 using Devs2Blu.ProjetosAula.CSharpMVCRevisao.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -31,6 +32,13 @@ namespace Devs2Blu.ProjetosAula.CSharpMVCRevisao.Controllers
             var result = await service.GetListCards();
             var listCards = result.Take(20).ToList();
             return PartialView(listCards);
+        }
+
+        [Route("search/{nameCard}")]
+        public async Task<PartialViewResult> SearchCard(string nameCard)
+        {
+            var card = await service.GetCardByName(nameCard);            
+            return PartialView(card);
         }
 
     }
