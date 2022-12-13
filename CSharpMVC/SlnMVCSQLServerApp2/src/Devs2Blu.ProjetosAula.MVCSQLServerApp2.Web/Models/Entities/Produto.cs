@@ -25,5 +25,7 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Models.Entities
         [Column("CategoriaId")]
         [Display(Name = "Categoria")]
         public int CategoriaId { get; set; }
+
+        public virtual Categoria Categoria { get; set; }
     }
 }
