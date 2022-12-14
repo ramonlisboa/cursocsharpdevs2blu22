@@ -4,7 +4,7 @@
 
 namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Migrations
 {
-    public partial class Inicialtabelas : Migration
+    public partial class MigTabelasSistema : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,7 +28,7 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    preco = table.Column<double>(type: "float", nullable: false),
                     quantidade = table.Column<int>(type: "int", nullable: false),
                     CategoriaId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -41,6 +41,32 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Migrations
                         principalTable: "categorias",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "categorias",
+                columns: new[] { "id", "nome" },
+                values: new object[,]
+                {
+                    { 1, "Alimentos Não Perecíveis" },
+                    { 2, "Laticínios" },
+                    { 3, "Limpeza" },
+                    { 4, "Bebidas Não Alcoólicas" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "produtos",
+                columns: new[] { "id", "CategoriaId", "nome", "preco", "quantidade" },
+                values: new object[,]
+                {
+                    { 1, 1, "Arroz Tio Urbano", 10.0, 5 },
+                    { 2, 1, "Feijão Tio Urbano", 10.0, 5 },
+                    { 3, 2, "Queijo", 20.0, 5 },
+                    { 4, 2, "Iogurte", 20.0, 5 },
+                    { 5, 3, "Sabão Líquido", 30.0, 5 },
+                    { 6, 3, "Multiuso", 30.0, 5 },
+                    { 7, 4, "Suco de Laranja 1L", 40.0, 5 },
+                    { 8, 4, "Coca-cola 2L", 40.0, 5 }
                 });
 
             migrationBuilder.CreateIndex(

@@ -29,7 +29,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CategoriaId" class="control-label"></label>
-                @Html.DropDownList("CategoriaId", new SelectList(ViewBag.data,"Id","Nome"), "Selecione...", new { @class = "form-control"})
+                <select asp-for="CategoriaId" class ="form-control" asp-items="ViewBag.CategoriaId"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

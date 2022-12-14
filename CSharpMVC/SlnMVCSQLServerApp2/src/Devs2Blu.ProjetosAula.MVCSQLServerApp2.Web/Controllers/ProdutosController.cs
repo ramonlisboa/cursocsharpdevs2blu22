@@ -22,7 +22,8 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
         // GET: Produtos
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Produto.ToListAsync());
+            var contextoDatabase = _context.Produto.Include(p => p.Categoria);
+            return View(await contextoDatabase.ToListAsync());
         }
 
         // GET: Produtos/Details/5
@@ -34,6 +35,7 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
             }
 
             var produto = await _context.Produto
+                .Include(p => p.Categoria)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (produto == null)
             {
@@ -44,9 +46,9 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
         }
 
         // GET: Produtos/Create
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
-            ViewBag.data = await _context.Categoria.ToListAsync();
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nome", "Selecione...");
             return View();
         }
 
@@ -63,7 +65,7 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewBag.data = await _context.Categoria.ToListAsync();
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nome", produto.CategoriaId);
             return View(produto);
         }
 
@@ -80,6 +82,7 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
             {
                 return NotFound();
             }
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nome", produto.CategoriaId);
             return View(produto);
         }
 
@@ -88,7 +91,7 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Preco,Quantidade")] Produto produto)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Preco,Quantidade,CategoriaId")] Produto produto)
         {
             if (id != produto.Id)
             {
@@ -115,6 +118,7 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nome", produto.CategoriaId);
             return View(produto);
         }
 
@@ -127,6 +131,7 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
             }
 
             var produto = await _context.Produto
+                .Include(p => p.Categoria)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (produto == null)
             {
