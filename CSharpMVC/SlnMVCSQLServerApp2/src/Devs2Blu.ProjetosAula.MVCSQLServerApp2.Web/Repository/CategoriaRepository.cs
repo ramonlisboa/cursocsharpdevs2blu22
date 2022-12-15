@@ -17,5 +17,11 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Repository
         {
             return await _context.Categoria.ToListAsync();
         }
+
+        public async Task<int> SaveCategoria(Categoria categoria)
+        {
+            _context.Add(categoria);
+            return await _context.SaveChangesAsync();
+        }
     }
 }
