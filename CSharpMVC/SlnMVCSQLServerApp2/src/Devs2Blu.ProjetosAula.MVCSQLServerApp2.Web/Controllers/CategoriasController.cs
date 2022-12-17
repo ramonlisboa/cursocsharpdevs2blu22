@@ -1,4 +1,5 @@
 ﻿using Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Models.Entities;
+using Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Models.ViewModel;
 using Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -28,13 +29,13 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
         // POST: CategoriasController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind("Id,Nome")] Categoria categoria)
+        public async Task<ActionResult> Create([Bind("Id,Nome")] CategoriaViewModel categoria)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    await _service.Save(categoria);
+                    await _service.Save(categoria.ToEntity());
                     return RedirectToAction(nameof(Index));
                 }
             }
@@ -66,23 +67,24 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Controllers
         }
 
         // GET: CategoriasController/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            return View();
+            var categoria = await _service.FindById(id);
+            return View(new CategoriaViewModel() { id = categoria.Id, nome = categoria.Nome });
         }
 
         // POST: CategoriasController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        [HttpPost, ActionName("Delete")]
+        public async Task<ActionResult<string>> ExecuteDelete([Bind("id,nome")] CategoriaViewModel categoria)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                var resp = await _service.Delete(categoria.ToEntity());
+                return new ActionResult<string>("OK");
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                return new ActionResult<string>(ex.Message);
             }
         }
     }

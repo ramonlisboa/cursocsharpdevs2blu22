@@ -15,9 +15,14 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Models
         {
             // Mapeamento de Relacionamento
             modelBuilder.Entity<Produto>()
-                .HasOne(p => p.Categoria)
-                .WithMany(c => c.Produtos)
-                .HasForeignKey(p => p.CategoriaId);
+                .HasOne(produto => produto.Categoria)
+                .WithMany(categoria => categoria.Produtos)
+                .HasForeignKey(produto => produto.CategoriaId);
+            
+            modelBuilder.Entity<Produto>()
+                .HasOne(produto => produto.Marca)
+                .WithMany(marca => marca.Produtos)
+                .HasForeignKey(produto => produto.MarcaId);
 
 
 

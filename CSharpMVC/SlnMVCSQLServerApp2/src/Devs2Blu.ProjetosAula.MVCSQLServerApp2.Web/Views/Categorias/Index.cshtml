@@ -1,25 +1,9 @@
 ﻿@model IEnumerable<Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Models.Entities.Categoria>
 
-    <div class="alert alert-success" id="alertMsg" style="display: none;">
-        <h2></h2>
-    </div>
+   
 <p>
     <a class="btn btn-primary" asp-action="Create">Nova Categoria</a>
 </p>
-
-<div id="msgCat" style="display: none;" class="container mb-4">
-    <div class="card bg-warning" style="width: 12rem;">
-        <div class="card-header">
-            <h3 class="text-danger" id="msgHeader">Excluir</h3>
-        </div>
-        <div class="card-body">
-            <h3 class="text-danger">Deseja Realmente excluir o registro: <span id="msgBody"></span> </h3>
-            <br />
-            <button class="btn btn-danger" id="btnExcluir">Excluir</button>
-            <button class="btn btn-primary" id="btnCancelar">Cancelar</button>
-        </div>
-    </div>
-</div>
 <table class="table">
     <thead>
         <tr>
@@ -43,14 +27,16 @@
             </td>
             <td>
                 <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a class="btn btn-danger" href="#" onclick="deleteCategoria(@item.Id, '@item.Nome')">Delete</a>
+                    <a class="btn btn-danger" href="#" onclick="deleteCategoria(@item.Id)">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
 
-@section Scritps {
+<div class="modal" id="modal" tabindex="-1"></div>
+
+@section Scripts {
     <script>
 
         $(document).ready(() => {
@@ -65,29 +51,9 @@
             });
         });
 
-        const deleteCategoria = (id, nome) => {
-            $('#msgBody').html(`${id} - ${nome}`);
-            $('#btnExcluir').click(() => executeDeleteCategoria(id));
-            $('#msgCat').show();
-        }
-
-        const executeDeleteCategoria = (id) => {
-            $('#msgCat').hide();
-
-            $.ajax({
-                url: `@Url.Action("Delete")/${id}`,
-                method: 'GET',
-                success: (response) => {
-                    if(response === 'OK') {
-                        $('#alertMsg').html('Registro Apagado com Sucesso!');
-                        $('#alertMsg').show();
-
-                        setTimeout(() => {
-                            $('#alertMsg').fadeOut();
-                            $('#alertMsg').html('');
-                        }, 2000);
-                    }
-                }
+        const deleteCategoria = (id) => {
+            $('#modal').load(`@Url.Action("Delete")/${id}`,() => {
+                $('#modal').modal('show');
             });
         }
     </script>

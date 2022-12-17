@@ -12,6 +12,17 @@ namespace Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Services.Implements
         {
             _repository = repository;
         }
+
+        public async Task<int> Delete(Categoria categoria)
+        {
+            return await _repository.DeleteCategoria(categoria);
+        }
+
+        public async Task<Categoria> FindById(int id)
+        {
+            return await _repository.FindByIdCategoria(id);
+        }
+
         public async Task<IEnumerable<Categoria>> GetAllCategorias()
         {
             return await _repository.GetAll();
