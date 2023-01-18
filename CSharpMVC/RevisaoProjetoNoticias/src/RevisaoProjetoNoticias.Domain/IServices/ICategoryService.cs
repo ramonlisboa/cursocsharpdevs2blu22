@@ -8,5 +8,6 @@ namespace RevisaoProjetoNoticias.Domain.IServices
 {
     public interface ICategoryService
     {
+        Task<int> Save<T>(T entity);
     }
 }
