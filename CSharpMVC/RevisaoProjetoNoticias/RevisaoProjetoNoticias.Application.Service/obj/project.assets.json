@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "RevisaoProjetoNoticias.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RevisaoProjetoNoticias.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RevisaoProjetoNoticias.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RevisaoProjetoNoticias.Domain/1.0.0": {
+      "type": "project",
+      "path": "../src/RevisaoProjetoNoticias.Domain/RevisaoProjetoNoticias.Domain.csproj",
+      "msbuildProject": "../src/RevisaoProjetoNoticias.Domain/RevisaoProjetoNoticias.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "RevisaoProjetoNoticias.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Usuario\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj": {
+              "projectPath": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

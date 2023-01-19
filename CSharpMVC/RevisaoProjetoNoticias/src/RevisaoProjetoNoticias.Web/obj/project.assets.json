@@ -2266,6 +2266,9 @@
       "RevisaoProjetoNoticias.Application.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RevisaoProjetoNoticias.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/RevisaoProjetoNoticias.Application.Service.dll": {}
         },

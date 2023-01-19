@@ -27,7 +27,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj": {
+                "projectPath": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

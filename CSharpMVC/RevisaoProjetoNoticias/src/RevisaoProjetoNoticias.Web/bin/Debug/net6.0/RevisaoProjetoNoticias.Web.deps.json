@@ -1292,6 +1292,9 @@
         }
       },
       "RevisaoProjetoNoticias.Application.Service/1.0.0": {
+        "dependencies": {
+          "RevisaoProjetoNoticias.Domain": "1.0.0"
+        },
         "runtime": {
           "RevisaoProjetoNoticias.Application.Service.dll": {}
         }
