@@ -29,7 +29,17 @@ namespace RevisaoProjetoNoticias.Domain.DTO
                 name = category.Name,
                 newsList = category.NewsList.Select(c => new NewsDTO()
                 {
-
+                    id = c.Id,
+                    title = c.Title,
+                    description = c.Description,
+                    categoryId = c.CategoryId,
+                    createdOn = c.CreatedOn,
+                    published = c.Published,
+                    category = new CategoryDTO()
+                    {
+                        id = c.Category.Id,
+                        name = c.Category.Name
+                    }
                 }).ToList(),
             };
         }

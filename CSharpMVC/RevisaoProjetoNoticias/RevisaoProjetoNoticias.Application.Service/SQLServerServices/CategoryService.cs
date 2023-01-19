@@ -23,9 +23,14 @@ namespace RevisaoProjetoNoticias.Application.Service.SQLServerServices
             throw new NotImplementedException();
         }
 
-        public IQueryable<CategoryDTO> FindAll()
+        public List<CategoryDTO> FindAll()
         {
-            throw new NotImplementedException();
+            return _repository.FindAll()
+                              .Select(c => new CategoryDTO()
+                                        {
+                                            id = c.Id,
+                                            name = c.Name
+                                        }).ToList();
         }
 
         public Task<CategoryDTO> FindById(int id)
