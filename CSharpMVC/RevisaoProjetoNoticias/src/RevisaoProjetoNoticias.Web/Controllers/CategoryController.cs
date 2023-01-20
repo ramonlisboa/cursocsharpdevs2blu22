@@ -22,9 +22,9 @@ namespace RevisaoProjetoNoticias.Web.Controllers
             return View(_service.FindAll());
         }
 
-        public IActionResult Add()
+        public JsonResult ListJson()
         {
-            return View();
+            return Json(_service.FindAll());
         }
     }
 }
