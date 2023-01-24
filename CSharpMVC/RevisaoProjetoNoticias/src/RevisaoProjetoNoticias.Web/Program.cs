@@ -21,6 +21,7 @@ builder.Services.AddScoped<INewsRepository, NewsRepository>();
 
 // # Services
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<INewsService, NewsService>();
 
 var app = builder.Build();
 
