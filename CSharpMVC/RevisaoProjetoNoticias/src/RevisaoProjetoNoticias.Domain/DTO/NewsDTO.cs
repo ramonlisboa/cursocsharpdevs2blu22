@@ -1,6 +1,7 @@
 ﻿using RevisaoProjetoNoticias.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,9 @@ namespace RevisaoProjetoNoticias.Domain.DTO
     public class NewsDTO
     {
         public int id { get; set; }
+
+        [Required(ErrorMessage = "Please, set a title.")]
+        [MinLength(3, ErrorMessage = "Title should bigger than 3 charactere")]
         public string title { get; set; }
         public string description { get; set; }
         public int categoryId { get; set; }

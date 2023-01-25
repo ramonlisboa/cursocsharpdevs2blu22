@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RevisaoProjetoNoticias.Domain.DTO;
+using RevisaoProjetoNoticias.Domain.Entities;
 using RevisaoProjetoNoticias.Domain.IServices;
 using RevisaoProjetoNoticias.Web.Models;
 using System.Diagnostics;
@@ -11,10 +12,12 @@ namespace RevisaoProjetoNoticias.Web.Controllers
     public class NewsController : Controller
     {
         private readonly INewsService _service;
+        private readonly ICategoryService _categoryService;
 
-        public NewsController(INewsService service)
+        public NewsController(INewsService service, ICategoryService categoryService)
         {
             _service = service;
+            _categoryService = categoryService;
         }
 
         public async Task<IActionResult> Index()
@@ -31,6 +34,7 @@ namespace RevisaoProjetoNoticias.Web.Controllers
 
         public IActionResult Create()
         {
+            ViewData["categoryId"] = new SelectList(_categoryService.FindAll(), "id", "name", "Select...");
             return View();
         }
 
@@ -42,7 +46,7 @@ namespace RevisaoProjetoNoticias.Web.Controllers
                 if(await _service.Save(news) > 0)                
                     return RedirectToAction(nameof(Index));
             }
-            //ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nome", produto.CategoriaId);
+            ViewData["categoryId"] = new SelectList(_categoryService.FindAll(), "id", "name", news.categoryId);
             return View(news);
         }
     }
