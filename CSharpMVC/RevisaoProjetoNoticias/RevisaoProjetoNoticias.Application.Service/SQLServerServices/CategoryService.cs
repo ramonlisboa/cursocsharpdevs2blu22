@@ -33,14 +33,21 @@ namespace RevisaoProjetoNoticias.Application.Service.SQLServerServices
                                         }).ToList();
         }
 
-        public Task<CategoryDTO> FindById(int id)
+        public async Task<CategoryDTO> FindById(int id)
         {
-            throw new NotImplementedException();
+            var dto = new CategoryDTO();
+            return dto.mapToDTO(await _repository.FindById(id));
         }
 
         public Task<int> Save(CategoryDTO entity)
         {
-            throw new NotImplementedException();
+            if (entity.id > 0)
+            {
+                return _repository.Update(entity.mapToEntity());
+            } else
+            {
+                return _repository.Save(entity.mapToEntity());
+            }
         }
     }
 }

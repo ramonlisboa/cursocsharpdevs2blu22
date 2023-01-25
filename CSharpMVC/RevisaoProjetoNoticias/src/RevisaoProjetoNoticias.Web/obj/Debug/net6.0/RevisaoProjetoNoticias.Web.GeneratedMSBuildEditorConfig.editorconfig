@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/devs2blu/CSharpMVC/RevisaoProjetoNoticias/src/RevisaoProjetoNoticias.Web/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/devs2blu/CSharpMVC/RevisaoProjetoNoticias/src/RevisaoProjetoNoticias.Web/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/devs2blu/CSharpMVC/RevisaoProjetoNoticias/src/RevisaoProjetoNoticias.Web/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

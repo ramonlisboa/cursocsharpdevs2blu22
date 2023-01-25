@@ -39,5 +39,11 @@ namespace RevisaoProjetoNoticias.Infra.Data.Repositories
             this._context.Set<T>().Add(entity);
             return this._context.SaveChangesAsync();
         }
+
+        public Task<int> Update(T entity)
+        {
+            this._context.Set<T>().Update(entity);
+            return this._context.SaveChangesAsync();
+        }
     }
 }

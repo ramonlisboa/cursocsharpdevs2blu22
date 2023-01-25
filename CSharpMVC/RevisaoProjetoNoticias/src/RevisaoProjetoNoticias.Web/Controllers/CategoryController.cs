@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using RevisaoProjetoNoticias.Domain.DTO;
+using RevisaoProjetoNoticias.Domain.Entities;
 using RevisaoProjetoNoticias.Domain.IServices;
 using RevisaoProjetoNoticias.Web.Models;
 using System.Diagnostics;
@@ -25,6 +27,43 @@ namespace RevisaoProjetoNoticias.Web.Controllers
         public JsonResult ListJson()
         {
             return Json(_service.FindAll());
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([Bind("id, name")] CategoryDTO category)
+        {
+
+            return View(category);
+        }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var category = await _service.FindById(id);
+            return View(category);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int? id, [Bind("id, name")] CategoryDTO category)
+        {
+            if (!(id == category.id))
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                if (await _service.Save(category) > 0)
+                    return RedirectToAction(nameof(Index));
+            }
+            return View(category);
         }
     }
 }

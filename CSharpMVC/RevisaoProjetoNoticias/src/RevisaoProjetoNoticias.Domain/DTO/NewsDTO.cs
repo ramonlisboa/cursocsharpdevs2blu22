@@ -42,11 +42,11 @@ namespace RevisaoProjetoNoticias.Domain.DTO
                 categoryId = news.CategoryId,
                 createdOn = news.CreatedOn,
                 published = news.Published,
-                category = new CategoryDTO()
+                /*category = new CategoryDTO()
                 {
                     id = news.Category.Id,
                     name = news.Category.Name
-                }
+                }*/
             };
         }
     }

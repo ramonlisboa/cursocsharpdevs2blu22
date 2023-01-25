@@ -29,7 +29,7 @@ namespace RevisaoProjetoNoticias.Domain.DTO
             {
                 id = category.Id,
                 name = category.Name,
-                newsList = category.NewsList.Select(c => new NewsDTO()
+                /*newsList = category.NewsList.Select(c => new NewsDTO()
                 {
                     id = c.Id,
                     title = c.Title,
@@ -42,7 +42,7 @@ namespace RevisaoProjetoNoticias.Domain.DTO
                         id = c.Category.Id,
                         name = c.Category.Name
                     }
-                }).ToList(),
+                }).ToList(),*/
             };
         }
     }
