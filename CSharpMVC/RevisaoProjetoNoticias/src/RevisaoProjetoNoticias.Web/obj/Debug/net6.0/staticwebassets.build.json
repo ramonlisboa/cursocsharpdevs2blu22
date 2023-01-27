@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ax2YDCBsPzb4uPC+OgVmegnoxanxoTFlG7dXmUZMC8o=",
+  "Hash": "KDVhP80W9Ty/pAIexAIi02iNVWEy4xyTKoPXaE5J+Cw=",
   "Source": "RevisaoProjetoNoticias.Web",
   "BasePath": "_content/RevisaoProjetoNoticias.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\wwwroot\\img\\logo.png",
+      "SourceId": "RevisaoProjetoNoticias.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\wwwroot\\",
+      "BasePath": "_content/RevisaoProjetoNoticias.Web",
+      "RelativePath": "img/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
       "Identity": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\wwwroot\\js\\site.js",

@@ -52,4 +52,29 @@
     </tbody>
 </table>
 
-<div class="modal" id="modal" tabindex="-1"></div>
+
+@section Scripts {
+    <script>
+        const deleteNews = (idParam) => {
+            msgModalMessage(`Deseja realmente excluir o registro ${idParam}?`, () => {
+                $.ajax({
+                    url: `@Url.Action("Delete")`,
+                    method: 'POST',
+                    data: {
+                        id: idParam
+                    },
+                    success: (resp) => {
+                        var msg = `O Registro ${idParam} foi excluído.`;
+                        if (!(resp.code == '200')) {
+                            msg = resp.status;
+                        }
+                        liveToastMessage(msg, 'News');
+                        setTimeout(() => { window.location.reload(); }, 4000);
+                    }
+                });
+                closeMsgModalMessage();
+            });
+        }
+    </script>
+}
+

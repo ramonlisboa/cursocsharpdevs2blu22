@@ -90,10 +90,4 @@ namespace RevisaoProjetoNoticias.Web.Controllers
             return Json(retDel);
         }
     }
-
-    public class ReturnJsonDel
-    {
-        public string status { get; set; }
-        public string code { get; set; }
-    }
 }

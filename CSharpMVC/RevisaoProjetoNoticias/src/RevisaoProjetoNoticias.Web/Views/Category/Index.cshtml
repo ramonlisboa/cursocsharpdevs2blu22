@@ -27,47 +27,32 @@
                 </td>
                 <td>
                     <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                    <a class="btn btn-danger" href="#" onclick="deleteCategoria(@item.id)">Delete</a>
+                    <a class="btn btn-danger" href="#" onclick="deleteCategory(@item.id)">Delete</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
 
-<div class="modal" id="modal" tabindex="-1"></div>
-
 @section Scripts {
     <script>
-
-        $(document).ready(() => {
-            //Do Edit Model
-
-
-            // Cancelar exclusao
-            $('#btnCancelar').click(() => {
-                $('#msgCat').hide();
-                $('#msgBody').html("");
-                $('#btnExcluir').unbind();
-            });
-        });
-
-        const deleteCategoria = (id) => {
-            if(confirm(`Deseja realmente excluir o registro ${id}?`)) {
-
+        const deleteCategory = (idParam) => {
+            msgModalMessage(`Deseja realmente excluir o registro ${idParam}?`, () => {
                 $.ajax({
                     url: `@Url.Action("Delete")`,
                     method: 'POST',
                     data: {
-                        id: id
+                        id: idParam
                     },
                     success: (resp) => {
                         if(resp.code == '200') {
-                            console.log(resp);
-                            window.location.reload();
+                            liveToastMessage(`O Registro ${idParam} foi excluído.`, 'Category');
+                            setTimeout(()=>{window.location.reload();},4000);
                         }
                     }
                 });
-            }
+                closeMsgModalMessage();
+            });
         }
     </script>
 }

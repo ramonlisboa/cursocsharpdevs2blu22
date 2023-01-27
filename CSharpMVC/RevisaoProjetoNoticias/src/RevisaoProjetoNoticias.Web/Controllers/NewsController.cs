@@ -49,5 +49,34 @@ namespace RevisaoProjetoNoticias.Web.Controllers
             ViewData["categoryId"] = new SelectList(_categoryService.FindAll(), "id", "name", news.categoryId);
             return View(news);
         }
+
+        [HttpPost]
+        public async Task<JsonResult> Delete(int? id)
+        {
+            var retDel = new ReturnJsonDel
+            {
+                status = "Success",
+                code = "200"
+            };
+            try
+            {
+                if (await _service.Delete(id ?? 0) <= 0)
+                {
+                    retDel = new ReturnJsonDel
+                    {
+                        status = "Error",
+                        code = "400"
+                    };
+                }
+            } catch (Exception ex)
+            {
+                retDel = new ReturnJsonDel
+                {
+                    status = ex.Message,
+                    code = "500"
+                };
+            }
+            return Json(retDel);
+        }
     }
 }
