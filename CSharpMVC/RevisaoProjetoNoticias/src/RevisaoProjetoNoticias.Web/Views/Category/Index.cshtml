@@ -35,3 +35,39 @@
 </table>
 
 <div class="modal" id="modal" tabindex="-1"></div>
+
+@section Scripts {
+    <script>
+
+        $(document).ready(() => {
+            //Do Edit Model
+
+
+            // Cancelar exclusao
+            $('#btnCancelar').click(() => {
+                $('#msgCat').hide();
+                $('#msgBody').html("");
+                $('#btnExcluir').unbind();
+            });
+        });
+
+        const deleteCategoria = (id) => {
+            if(confirm(`Deseja realmente excluir o registro ${id}?`)) {
+
+                $.ajax({
+                    url: `@Url.Action("Delete")`,
+                    method: 'POST',
+                    data: {
+                        id: id
+                    },
+                    success: (resp) => {
+                        if(resp.code == '200') {
+                            console.log(resp);
+                            window.location.reload();
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+}

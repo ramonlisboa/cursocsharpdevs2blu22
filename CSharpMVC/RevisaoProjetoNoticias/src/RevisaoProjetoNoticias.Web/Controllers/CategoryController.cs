@@ -37,6 +37,11 @@ namespace RevisaoProjetoNoticias.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([Bind("id, name")] CategoryDTO category)
         {
+            if (ModelState.IsValid)
+            {
+                if (await _service.Save(category) > 0)
+                    return RedirectToAction(nameof(Index));
+            }
 
             return View(category);
         }
@@ -65,5 +70,30 @@ namespace RevisaoProjetoNoticias.Web.Controllers
             }
             return View(category);
         }
+
+        [HttpPost]
+        public async Task<JsonResult> Delete(int? id)
+        {
+            var retDel = new ReturnJsonDel
+            {
+                status = "Success",
+                code = "200"
+            };
+            if (await _service.Delete(id ?? 0) <= 0)
+            {
+                 retDel = new ReturnJsonDel
+                {
+                    status = "Error",
+                    code = "400"
+                };
+            }
+            return Json(retDel);
+        }
+    }
+
+    public class ReturnJsonDel
+    {
+        public string status { get; set; }
+        public string code { get; set; }
     }
 }
