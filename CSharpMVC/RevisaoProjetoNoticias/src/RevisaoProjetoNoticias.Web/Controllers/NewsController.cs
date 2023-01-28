@@ -5,6 +5,7 @@ using RevisaoProjetoNoticias.Domain.DTO;
 using RevisaoProjetoNoticias.Domain.Entities;
 using RevisaoProjetoNoticias.Domain.IServices;
 using RevisaoProjetoNoticias.Web.Models;
+using RevisaoProjetoNoticias.Web.Models.DTO;
 using System.Diagnostics;
 
 namespace RevisaoProjetoNoticias.Web.Controllers
@@ -77,6 +78,22 @@ namespace RevisaoProjetoNoticias.Web.Controllers
                 };
             }
             return Json(retDel);
+        }
+        public IActionResult ImagePost(int? id)
+        {
+            ImageFieldNews newsModel = new ImageFieldNews();
+            if (id != null)
+            {
+                newsModel.idNews = id ?? 0;
+            }
+            return View(newsModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ImagePost([Bind("idNews, imageNews")] ImageFieldNews newsModel)
+        {
+            var news = await _service.FindById(newsModel.idNews);
+            return View(newsModel);
         }
     }
 }

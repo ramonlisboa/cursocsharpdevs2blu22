@@ -15,5 +15,6 @@ namespace RevisaoProjetoNoticias.Domain.Entities
         public DateTime? CreatedOn { get; set; }
         public bool Published { get; set; }
         public virtual Category? Category { get; set; }
+        public string? Image { get; set; }
     }
 }
