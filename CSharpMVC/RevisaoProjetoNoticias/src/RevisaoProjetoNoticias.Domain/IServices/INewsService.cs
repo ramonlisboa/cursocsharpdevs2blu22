@@ -9,5 +9,6 @@ namespace RevisaoProjetoNoticias.Domain.IServices
 {
     public interface INewsService : IBaseService<NewsDTO>
     {
+        Task<int> SaveFile(int id, string file);
     }
 }

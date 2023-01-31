@@ -9,5 +9,6 @@ namespace RevisaoProjetoNoticias.Domain.IRepositories
 {
     public interface INewsRepository : IBaseRepository<News>
     {
+        Task<int> SaveFile(int id, string fileName);
     }
 }

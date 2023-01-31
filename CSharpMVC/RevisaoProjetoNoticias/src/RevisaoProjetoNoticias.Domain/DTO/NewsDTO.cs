@@ -20,6 +20,7 @@ namespace RevisaoProjetoNoticias.Domain.DTO
         public DateTime? createdOn { get; set; }
         public bool published { get; set; }
         public virtual CategoryDTO? category { get; set; }
+        public string? image { get; set; }
 
         public News mapToEntity()
         {
@@ -29,7 +30,8 @@ namespace RevisaoProjetoNoticias.Domain.DTO
                 Description = description,
                 CategoryId = categoryId,
                 CreatedOn = createdOn,
-                Published = published
+                Published = published,
+                Image = image
             };
         }
         public NewsDTO mapToDTO(News news)
@@ -42,6 +44,7 @@ namespace RevisaoProjetoNoticias.Domain.DTO
                 categoryId = news.CategoryId,
                 createdOn = news.CreatedOn,
                 published = news.Published,
+                image = news.Image
                 /*category = new CategoryDTO()
                 {
                     id = news.Category.Id,

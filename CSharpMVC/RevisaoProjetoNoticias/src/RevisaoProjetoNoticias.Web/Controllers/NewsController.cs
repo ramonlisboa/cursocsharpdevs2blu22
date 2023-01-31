@@ -6,7 +6,8 @@ using RevisaoProjetoNoticias.Domain.Entities;
 using RevisaoProjetoNoticias.Domain.IServices;
 using RevisaoProjetoNoticias.Web.Models;
 using RevisaoProjetoNoticias.Web.Models.DTO;
-using System.Diagnostics;
+using System.IO;
+
 
 namespace RevisaoProjetoNoticias.Web.Controllers
 {
@@ -79,21 +80,44 @@ namespace RevisaoProjetoNoticias.Web.Controllers
             }
             return Json(retDel);
         }
-        public IActionResult ImagePost(int? id)
+        public IActionResult ImagePost(int id)
         {
             ImageFieldNews newsModel = new ImageFieldNews();
             if (id != null)
             {
-                newsModel.idNews = id ?? 0;
+                newsModel.idNews = id;
             }
             return View(newsModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> ImagePost([Bind("idNews, imageNews")] ImageFieldNews newsModel)
+        public async Task<IActionResult> ImagePost(int idNews, List<IFormFile> imageNews)
         {
-            var news = await _service.FindById(newsModel.idNews);
-            return View(newsModel);
+            try
+            {
+                if (idNews == null)
+                {
+                    ViewBag.Message = $"O ID da News é Null!";
+                    return View(new ImageFieldNews() { idNews = idNews});
+                }
+
+                var file = imageNews.FirstOrDefault();
+                var fileName = $"{idNews}_{file.FileName}";
+                string path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot//Uploads", fileName);
+
+                if (await _service.SaveFile(idNews, fileName) > 0)
+                {
+                    var stream = new FileStream(path, FileMode.Create);
+                    file.CopyToAsync(stream);
+                    ViewBag.Message = $"Arquivo Salvo com sucesso em : {path}";
+                    return View(new ImageFieldNews() { idNews = idNews , imageNews = fileName});
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Message = $"Error: {ex.Message}";
+            }
+            return View();
         }
     }
 }
