@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4fwNR17jnBaUs0302jfG0cVFKk22gznD0vUYY6mKJys=",
+  "Hash": "jllJDndEtOwlPsys63hgMItNziiO22v/COluW6i4jMA=",
   "Source": "RevisaoProjetoNoticias.Web",
   "BasePath": "_content/RevisaoProjetoNoticias.Web",
   "Mode": "Default",
@@ -1086,6 +1086,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\wwwroot\\Uploads\\1_banner.jpeg",
+      "SourceId": "RevisaoProjetoNoticias.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\wwwroot\\",
+      "BasePath": "_content/RevisaoProjetoNoticias.Web",
+      "RelativePath": "Uploads/1_banner.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\1_banner.jpeg"
+    },
+    {
+      "Identity": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\wwwroot\\Uploads\\6_content1.png",
+      "SourceId": "RevisaoProjetoNoticias.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\wwwroot\\",
+      "BasePath": "_content/RevisaoProjetoNoticias.Web",
+      "RelativePath": "Uploads/6_content1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\6_content1.png"
     },
     {
       "Identity": "C:\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\wwwroot\\Uploads\\content1.jpg",

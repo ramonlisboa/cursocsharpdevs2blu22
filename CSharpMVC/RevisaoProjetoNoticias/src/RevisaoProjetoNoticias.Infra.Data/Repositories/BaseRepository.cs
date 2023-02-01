@@ -53,5 +53,10 @@ namespace RevisaoProjetoNoticias.Infra.Data.Repositories
                 return this._context.SaveChangesAsync();
             }
         }
+
+        public async Task<int> ExecuteCommand(string sqlCommand)
+        {
+            return await this._context.Database.ExecuteSqlRawAsync(sqlCommand);
+        }
     }
 }

@@ -21,6 +21,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.published)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.image)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -44,8 +47,14 @@
                     @Html.DisplayFor(modelItem => item.published)
                 </td>
                 <td>
+                    <figure class="col-md-4">
+                        <img src="~/Uploads/@item.image" style="width: 64px;" />
+                    </figure>
+                </td>
+                <td>
                     <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                    <a class="btn btn-danger" href="#" onclick="deleteNews(@item.id)">Delete</a>
+                    <a class="btn btn-danger" href="#" onclick="deleteNews(@item.id)">Delete</a>|
+                    <a class="btn btn-info" asp-action="ImagePost" asp-route-id="@item.id"> &uArr; IMG </a>
                 </td>
             </tr>
         }

@@ -26,7 +26,8 @@ namespace RevisaoProjetoNoticias.Web.Controllers
         {
             // To List all categories
             // Get of CategoryRepository through Dependecy Injection (CategoryService)
-            return View(_service.FindAll());
+            var list = _service.FindAll();
+            return View(list);
         }
 
         public JsonResult ListJson()
@@ -109,9 +110,10 @@ namespace RevisaoProjetoNoticias.Web.Controllers
                 {
                     var stream = new FileStream(path, FileMode.Create);
                     file.CopyToAsync(stream);
-                    ViewBag.Message = $"Arquivo Salvo com sucesso em : {path}";
-                    return View(new ImageFieldNews() { idNews = idNews , imageNews = fileName});
+                    return RedirectToAction(nameof(Index));
                 }
+                ViewBag.Message = $"Não foi possível salvar o arquivo: {path}";
+                return View(new ImageFieldNews() { idNews = idNews , imageNews = fileName});
             }
             catch (Exception ex)
             {

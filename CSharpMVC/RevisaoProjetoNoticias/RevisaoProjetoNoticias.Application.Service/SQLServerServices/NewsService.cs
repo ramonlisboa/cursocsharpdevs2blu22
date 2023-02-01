@@ -27,11 +27,16 @@ namespace RevisaoProjetoNoticias.Application.Service.SQLServerServices
         public List<NewsDTO> FindAll()
         {
             return _repository.FindAll()
-                              .Select(c => new NewsDTO()
+                              .Select(news => new NewsDTO()
                                         {
-                                            id = c.Id,
-                                            title = c.Title
-                                        }).ToList();
+                                          id = news.Id,
+                                          title = news.Title,
+                                          description = news.Description,
+                                          categoryId = news.CategoryId,
+                                          createdOn = news.CreatedOn,
+                                          published = news.Published,
+                                          image = news.Image
+                              }).ToList();
         }
 
         public async Task<NewsDTO> FindById(int id)
