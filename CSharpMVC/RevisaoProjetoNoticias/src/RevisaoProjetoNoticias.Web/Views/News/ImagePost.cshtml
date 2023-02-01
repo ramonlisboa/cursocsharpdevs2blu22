@@ -1,0 +1,51 @@
+﻿@model RevisaoProjetoNoticias.Web.Models.DTO.ImageFieldNews
+<h1>Create</h1>
+
+<h4>News's Image Upload</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+@using (Html.BeginForm ("ImagePost",  
+                        "News",  
+                        FormMethod.Post,  
+                        new { enctype = "multipart/form-data" }))  
+{                    
+    <label for="file">Upload Image:</label>
+            <input type="hidden" name="idNews" asp-for="idNews" id="idNews" />
+            <input type="file" name="imageNews" id="imageNews" class="form-control" />
+            <br>
+            <br>
+            <input type="submit" value="Upload Image" class="btn btn-primary" />
+            <br><br>  
+    @ViewBag.Message  
+}
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <script>
+        const uploadImage = () => {
+            let idNews = $('#idNews').val();
+            let imageNews = $('#imageNews').val();
+
+            $.ajax({
+                url: `@Url.Action("ImagePost")`,
+                method: 'POST',
+                data: {
+                    idNews,
+                    imageNews
+                },
+                success: (resp) => {
+                    console.log(resp);
+                }
+            });
+        }
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Models.Entities.Categoria>
+
+   
+<p>
+    <a class="btn btn-primary" asp-action="Create">Nova Categoria</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a class="btn btn-danger" href="#" onclick="deleteCategoria(@item.Id)">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div class="modal" id="modal" tabindex="-1"></div>
+
+@section Scripts {
+    <script>
+
+        $(document).ready(() => {
+                //Do Edit Model
+            
+                
+            // Cancelar exclusao
+            $('#btnCancelar').click(()=>{
+                $('#msgCat').hide();
+                $('#msgBody').html("");
+                $('#btnExcluir').unbind();
+            });
+        });
+
+        const deleteCategoria = (id) => {
+            $('#modal').load(`@Url.Action("Delete")/${id}`,() => {
+                $('#modal').modal('show');
+            });
+        }
+    </script>
+}

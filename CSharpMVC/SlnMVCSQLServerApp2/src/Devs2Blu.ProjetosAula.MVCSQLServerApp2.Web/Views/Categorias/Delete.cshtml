@@ -1,0 +1,62 @@
+﻿@model Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Models.ViewModel.CategoriaViewModel
+
+@{
+    Layout = null;
+}
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Deseja Realmente excluir a Categoria?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="content">
+                <h4>Categoria</h4>
+                <hr />
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.nome)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.nome)
+                    </dd>
+                </dl>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button id="btnDelete" type="button" class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+
+        $(document).ready(() => {
+            // Cancelar exclusao
+            $('#btnDelete').click(() => executeDeleteCategoria());
+        });
+
+        const executeDeleteCategoria = () => {
+            $.ajax({
+                url: `@Url.Action("Delete")`,
+                method: 'POST',
+                data: {
+                    id : @Model.id,
+                    nome : '@Model.nome'
+                    },
+                success: (response) => {
+                    if (response === 'OK') {
+                    let htmlMsg = `    <div class="alert alert-success" id="alertMsg" style="display: none;">
+                                                <h2>Registro Apagado com Sucesso!</h2>
+                                        </div>`
+                        $('#content').html(htmlMsg);
+                        $('#modal').modal('toggle');
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+    </script>

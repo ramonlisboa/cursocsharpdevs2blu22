@@ -1,0 +1,13 @@
+﻿<div class="row">
+   <h1 class="text-danger">Lista de Cards Yu-Gi-Oh</h1>
+</div>
+
+<div class="row" id="content-list"></div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(()=>{
+            getView('cards', 'loadcards', '#content-list');
+        })  ;  
+    </script>
+}

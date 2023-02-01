@@ -1,0 +1,15 @@
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\bin\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.deps.json
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\bin\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.dll
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\bin\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.pdb
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.csproj.AssemblyReference.cache
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.AssemblyInfoInputs.cache
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.AssemblyInfo.cs
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.csproj.CoreCompileInputs.cache
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.dll
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\refint\RevisaoProjetoNoticias.Application.Service.dll
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.pdb
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\ref\RevisaoProjetoNoticias.Application.Service.dll
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\bin\Debug\net6.0\RevisaoProjetoNoticias.Domain.dll
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\bin\Debug\net6.0\RevisaoProjetoNoticias.Domain.pdb
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\RevisaoProjetoNoticias.Application.Service\obj\Debug\net6.0\RevisaoProjetoNoticias.Application.Service.csproj.CopyComplete
