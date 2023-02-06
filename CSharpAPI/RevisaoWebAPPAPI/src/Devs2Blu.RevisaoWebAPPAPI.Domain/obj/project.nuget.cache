@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HznQuD2J7PGhjF24iQ8OBAfiZernm8wR+2YgkqJE7dO9404Yqe8v+S+oFvW6uPdpLF6Q5mkmDjbCuTmycOwlvQ==",
+  "dgSpecHash": "Ry4jBzwccpxRNH85NyUf/61TrTJSjJ3mPERu8FzWjSg3u66DuTLDgzmXKnLVRdGK4SCzPvk9zp9t/B+xAQWekw==",
   "success": true,
-  "projectFilePath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Domain\\Devs2Blu.RevisaoWebAPPAPI.Domain.csproj",
+  "projectFilePath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Domain\\RevisaoWebAPPAPI.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

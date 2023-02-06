@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "RevisaoWebAPPAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RevisaoWebAPPAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RevisaoWebAPPAPI.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RevisaoWebAPPAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Devs2Blu.RevisaoWebAPPAPI.Domain/RevisaoWebAPPAPI.Domain.csproj",
+      "msbuildProject": "../Devs2Blu.RevisaoWebAPPAPI.Domain/RevisaoWebAPPAPI.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "RevisaoWebAPPAPI.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Usuario\\.nuget\\packages\\": {}
@@ -13,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Repository\\Devs2Blu.RevisaoWebAPPAPI.Repository.csproj",
-      "projectName": "Devs2Blu.RevisaoWebAPPAPI.Repository",
-      "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Repository\\Devs2Blu.RevisaoWebAPPAPI.Repository.csproj",
+      "projectUniqueName": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Repository\\RevisaoWebAPPAPI.Infra.Data.Repository.csproj",
+      "projectName": "RevisaoWebAPPAPI.Infra.Data.Repository",
+      "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Repository\\RevisaoWebAPPAPI.Infra.Data.Repository.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Repository\\obj\\",
       "projectStyle": "PackageReference",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Domain\\RevisaoWebAPPAPI.Domain.csproj": {
+              "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Domain\\RevisaoWebAPPAPI.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

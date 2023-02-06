@@ -88,6 +88,43 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "RevisaoWebAPPAPI.Application.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RevisaoWebAPPAPI.Domain": "1.0.0",
+          "RevisaoWebAPPAPI.Infra.Data.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RevisaoWebAPPAPI.Application.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RevisaoWebAPPAPI.Application.Services.dll": {}
+        }
+      },
+      "RevisaoWebAPPAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RevisaoWebAPPAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RevisaoWebAPPAPI.Domain.dll": {}
+        }
+      },
+      "RevisaoWebAPPAPI.Infra.Data.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RevisaoWebAPPAPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RevisaoWebAPPAPI.Infra.Data.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RevisaoWebAPPAPI.Infra.Data.Repository.dll": {}
+        }
       }
     }
   },
@@ -216,10 +253,28 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "RevisaoWebAPPAPI.Application.Services/1.0.0": {
+      "type": "project",
+      "path": "../Devs2Blu.RevisaoWebAPPAPI.Services/RevisaoWebAPPAPI.Application.Services.csproj",
+      "msbuildProject": "../Devs2Blu.RevisaoWebAPPAPI.Services/RevisaoWebAPPAPI.Application.Services.csproj"
+    },
+    "RevisaoWebAPPAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Devs2Blu.RevisaoWebAPPAPI.Domain/RevisaoWebAPPAPI.Domain.csproj",
+      "msbuildProject": "../Devs2Blu.RevisaoWebAPPAPI.Domain/RevisaoWebAPPAPI.Domain.csproj"
+    },
+    "RevisaoWebAPPAPI.Infra.Data.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Devs2Blu.RevisaoWebAPPAPI.Repository/RevisaoWebAPPAPI.Infra.Data.Repository.csproj",
+      "msbuildProject": "../Devs2Blu.RevisaoWebAPPAPI.Repository/RevisaoWebAPPAPI.Infra.Data.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "RevisaoWebAPPAPI.Application.Services >= 1.0.0",
+      "RevisaoWebAPPAPI.Domain >= 1.0.0",
+      "RevisaoWebAPPAPI.Infra.Data.Repository >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -229,9 +284,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebAPI\\Devs2Blu.RevisaoWebAPPAPI.WebAPI.csproj",
-      "projectName": "Devs2Blu.RevisaoWebAPPAPI.WebAPI",
-      "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebAPI\\Devs2Blu.RevisaoWebAPPAPI.WebAPI.csproj",
+      "projectUniqueName": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebAPI\\RevisaoWebAPPAPI.Application.WebAPI.csproj",
+      "projectName": "RevisaoWebAPPAPI.Application.WebAPI",
+      "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebAPI\\RevisaoWebAPPAPI.Application.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
@@ -249,7 +304,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Domain\\RevisaoWebAPPAPI.Domain.csproj": {
+              "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Domain\\RevisaoWebAPPAPI.Domain.csproj"
+            },
+            "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Repository\\RevisaoWebAPPAPI.Infra.Data.Repository.csproj": {
+              "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Repository\\RevisaoWebAPPAPI.Infra.Data.Repository.csproj"
+            },
+            "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Services\\RevisaoWebAPPAPI.Application.Services.csproj": {
+              "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.Services\\RevisaoWebAPPAPI.Application.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

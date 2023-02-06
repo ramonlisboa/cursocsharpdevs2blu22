@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "J+OXN3oTpckspkWnOEExpMwyBY5XbCcy62Xl7+8ANWQ=",
-  "Source": "Devs2Blu.RevisaoWebAPPAPI.WebAPI",
-  "BasePath": "_content/Devs2Blu.RevisaoWebAPPAPI.WebAPI",
+  "Hash": "y+RMxG0KDyM3IJ4LCkqeuFSYX6enm1Wd3gafNnjnf9Q=",
+  "Source": "RevisaoWebAPPAPI.Application.WebAPI",
+  "BasePath": "_content/RevisaoWebAPPAPI.Application.WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

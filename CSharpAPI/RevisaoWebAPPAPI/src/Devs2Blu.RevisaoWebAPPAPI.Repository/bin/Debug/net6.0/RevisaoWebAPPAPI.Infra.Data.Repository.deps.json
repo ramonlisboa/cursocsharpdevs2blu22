@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RevisaoWebAPPAPI.Infra.Data.Repository/1.0.0": {
+        "dependencies": {
+          "RevisaoWebAPPAPI.Domain": "1.0.0"
+        },
+        "runtime": {
+          "RevisaoWebAPPAPI.Infra.Data.Repository.dll": {}
+        }
+      },
+      "RevisaoWebAPPAPI.Domain/1.0.0": {
+        "runtime": {
+          "RevisaoWebAPPAPI.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RevisaoWebAPPAPI.Infra.Data.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RevisaoWebAPPAPI.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

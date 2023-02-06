@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Devs2Blu.RevisaoWebAPPAPI.Domain\RevisaoWebAPPAPI.Domain.csproj" />
+    <ProjectReference Include="..\Devs2Blu.RevisaoWebAPPAPI.Repository\RevisaoWebAPPAPI.Infra.Data.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

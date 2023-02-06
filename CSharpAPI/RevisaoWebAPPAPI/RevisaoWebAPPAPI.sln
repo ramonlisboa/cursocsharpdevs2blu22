@@ -11,19 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{EB8A59ED-E345-48BD-BB84-A363E1C8F21B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.RevisaoWebAPPAPI.WebMVC", "src\Devs2Blu.RevisaoWebAPPAPI.WebMVC\Devs2Blu.RevisaoWebAPPAPI.WebMVC.csproj", "{8DAD8BDD-A494-422C-B88C-4BAB3EE0F7A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevisaoWebAPPAPI.WebMVC", "src\Devs2Blu.RevisaoWebAPPAPI.WebMVC\RevisaoWebAPPAPI.WebMVC.csproj", "{8DAD8BDD-A494-422C-B88C-4BAB3EE0F7A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{92F09FFF-FF2A-4965-B5A5-FF06593C6E6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - Crosscutting", "4.2 - Crosscutting", "{6744F064-CCB1-4581-920F-00B98960E512}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.RevisaoWebAPPAPI.WebAPI", "src\Devs2Blu.RevisaoWebAPPAPI.WebAPI\Devs2Blu.RevisaoWebAPPAPI.WebAPI.csproj", "{9FF17861-25D1-4E38-B5ED-E82206F606E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevisaoWebAPPAPI.Application.WebAPI", "src\Devs2Blu.RevisaoWebAPPAPI.WebAPI\RevisaoWebAPPAPI.Application.WebAPI.csproj", "{9FF17861-25D1-4E38-B5ED-E82206F606E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.RevisaoWebAPPAPI.Services", "src\Devs2Blu.RevisaoWebAPPAPI.Services\Devs2Blu.RevisaoWebAPPAPI.Services.csproj", "{0D00170A-3D4C-4FEA-9556-423471FEA220}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevisaoWebAPPAPI.Application.Services", "src\Devs2Blu.RevisaoWebAPPAPI.Services\RevisaoWebAPPAPI.Application.Services.csproj", "{0D00170A-3D4C-4FEA-9556-423471FEA220}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devs2Blu.RevisaoWebAPPAPI.Domain", "src\Devs2Blu.RevisaoWebAPPAPI.Domain\Devs2Blu.RevisaoWebAPPAPI.Domain.csproj", "{6CC4A264-A8C0-461A-B19C-960B154E3686}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevisaoWebAPPAPI.Domain", "src\Devs2Blu.RevisaoWebAPPAPI.Domain\RevisaoWebAPPAPI.Domain.csproj", "{6CC4A264-A8C0-461A-B19C-960B154E3686}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.RevisaoWebAPPAPI.Repository", "src\Devs2Blu.RevisaoWebAPPAPI.Repository\Devs2Blu.RevisaoWebAPPAPI.Repository.csproj", "{90AFD5CD-31A6-4851-B8BD-997F6C4E72C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevisaoWebAPPAPI.Infra.Data.Repository", "src\Devs2Blu.RevisaoWebAPPAPI.Repository\RevisaoWebAPPAPI.Infra.Data.Repository.csproj", "{90AFD5CD-31A6-4851-B8BD-997F6C4E72C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

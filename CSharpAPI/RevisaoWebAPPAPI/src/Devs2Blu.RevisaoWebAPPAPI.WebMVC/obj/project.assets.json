@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebMVC\\Devs2Blu.RevisaoWebAPPAPI.WebMVC.csproj",
-      "projectName": "Devs2Blu.RevisaoWebAPPAPI.WebMVC",
-      "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebMVC\\Devs2Blu.RevisaoWebAPPAPI.WebMVC.csproj",
+      "projectUniqueName": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebMVC\\RevisaoWebAPPAPI.WebMVC.csproj",
+      "projectName": "RevisaoWebAPPAPI.WebMVC",
+      "projectPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebMVC\\RevisaoWebAPPAPI.WebMVC.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "C:\\devs2blu\\CSharpAPI\\RevisaoWebAPPAPI\\src\\Devs2Blu.RevisaoWebAPPAPI.WebMVC\\obj\\",
       "projectStyle": "PackageReference",
