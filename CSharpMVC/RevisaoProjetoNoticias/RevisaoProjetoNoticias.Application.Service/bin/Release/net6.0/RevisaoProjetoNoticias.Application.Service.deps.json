@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RevisaoProjetoNoticias.Application.Service/1.0.0": {
+        "dependencies": {
+          "RevisaoProjetoNoticias.Domain": "1.0.0"
+        },
+        "runtime": {
+          "RevisaoProjetoNoticias.Application.Service.dll": {}
+        }
+      },
+      "RevisaoProjetoNoticias.Domain/1.0.0": {
+        "runtime": {
+          "RevisaoProjetoNoticias.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RevisaoProjetoNoticias.Application.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RevisaoProjetoNoticias.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\bin\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.deps.json
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\bin\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.runtimeconfig.json
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\bin\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.dll
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\bin\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.pdb
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\bin\Release\net6.0\RevisaoProjetoNoticias.Domain.dll
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\bin\Release\net6.0\RevisaoProjetoNoticias.Domain.pdb
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.csproj.AssemblyReference.cache
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.AssemblyInfoInputs.cache
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.AssemblyInfo.cs
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.csproj.CoreCompileInputs.cache
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.csproj.CopyComplete
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.dll
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\refint\RevisaoProjetoNoticias.Infra.Data.dll
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.pdb
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\RevisaoProjetoNoticias.Infra.Data.genruntimeconfig.cache
+C:\devs2blu\CSharpMVC\RevisaoProjetoNoticias\src\RevisaoProjetoNoticias.Infra.Data\obj\Release\net6.0\ref\RevisaoProjetoNoticias.Infra.Data.dll

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.PrimeiraAPIASPNetCore.API", "src\Devs2Blu.PrimeiraAPIASPNetCore.API\Devs2Blu.PrimeiraAPIASPNetCore.API.csproj", "{A76ECB25-BFCB-49E4-B83A-2249A8A63CE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A76ECB25-BFCB-49E4-B83A-2249A8A63CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76ECB25-BFCB-49E4-B83A-2249A8A63CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76ECB25-BFCB-49E4-B83A-2249A8A63CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76ECB25-BFCB-49E4-B83A-2249A8A63CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2077C3D8-98B5-4076-8A36-C2B6193E1BE6}
+	EndGlobalSection
+EndGlobal
