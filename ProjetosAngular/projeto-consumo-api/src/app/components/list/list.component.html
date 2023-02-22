@@ -1,1 +1,9 @@
-<p>list works!</p>
+<div class="row">
+  <ul class="list-group">
+    <li *ngFor="let item of resultsList$ | async;" class="list-group-item d-flex justify-between-content">
+      <span class="col"> {{ item.name | titlecase }} </span>
+      <span class="col"> {{ item.url }} </span>
+      <a href="{{item.url}}" class="btn btn-primary"> Ver {{item.name}}</a>
+    </li>
+  </ul>
+</div>
