@@ -1,1 +1,21 @@
-<p>details works!</p>
+<div class="row">
+  <div class="row mb-2">
+    <h1 class="card-title">{{ pokemon.name | titlecase }}</h1>
+    <hr>
+  </div>
+  <div class="col-4">
+    <div class="card" style="width: 18rem;">
+      <img src="{{pokemon.sprites?.front_default}}" class="card-img-top" alt="...">
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="card" style="width: 18rem;">
+      <img src="{{pokemon.sprites?.back_default}}" class="card-img-top" alt="...">
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="card" style="width: 18rem;">
+      <img src="{{pokemon.sprites?.front_shiny}}" class="card-img-top" alt="...">
+    </div>
+  </div>
+</div>

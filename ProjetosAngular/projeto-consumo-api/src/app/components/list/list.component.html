@@ -1,9 +1,11 @@
 <div class="row">
-  <ul class="list-group">
-    <li *ngFor="let item of resultsList$ | async;" class="list-group-item d-flex justify-between-content">
-      <span class="col"> {{ item.name | titlecase }} </span>
-      <span class="col"> {{ item.url }} </span>
-      <a href="{{item.url}}" class="btn btn-primary"> Ver {{item.name}}</a>
-    </li>
-  </ul>
+  <div *ngFor="let item of resultsList$ | async;" class="col-4 mb-2">
+    <div class="card" style="width: 18rem;">
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <a routerLink="/detail/{{ item.name }}" class="btn btn-primary">Go {{ item.name }}</a>
+      </div>
+    </div>
+  </div>
 </div>
