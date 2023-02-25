@@ -1,0 +1,17 @@
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\bin\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.deps.json
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\bin\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.runtimeconfig.json
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\bin\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\bin\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.pdb
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\bin\Debug\net6.0\ProjetoNotas.Domain.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\bin\Debug\net6.0\ProjetoNotas.Domain.pdb
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.csproj.AssemblyReference.cache
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.AssemblyInfoInputs.cache
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.AssemblyInfo.cs
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.csproj.CoreCompileInputs.cache
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.csproj.CopyComplete
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\refint\ProjetoNotas.Infra.Data.Repository.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.pdb
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ProjetoNotas.Infra.Data.Repository.genruntimeconfig.cache
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Infra.Data.Repository\obj\Debug\net6.0\ref\ProjetoNotas.Infra.Data.Repository.dll

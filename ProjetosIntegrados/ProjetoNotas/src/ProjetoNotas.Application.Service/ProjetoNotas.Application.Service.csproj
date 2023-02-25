@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ExternalServices\" />
+    <Folder Include="SQLServices\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoNotas.Domain\ProjetoNotas.Domain.csproj" />
+    <ProjectReference Include="..\ProjetoNotas.Infra.Data.Repository\ProjetoNotas.Infra.Data.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
