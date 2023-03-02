@@ -85,3 +85,11 @@ C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\obj
 C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\obj\Debug\net6.0\ProjetoNotas.Application.API.pdb
 C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\obj\Debug\net6.0\ProjetoNotas.Application.API.genruntimeconfig.cache
 C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\obj\Debug\net6.0\ref\ProjetoNotas.Application.API.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\bin\Debug\net6.0\Humanizer.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\bin\Debug\net6.0\System.CodeDom.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\bin\Debug\net6.0\System.Text.Json.dll
+C:\devs2blu\ProjetosIntegrados\ProjetoNotas\src\ProjetoNotas.Application.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

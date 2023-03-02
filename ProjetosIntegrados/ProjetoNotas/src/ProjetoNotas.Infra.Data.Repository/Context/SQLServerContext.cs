@@ -16,6 +16,14 @@ namespace ProjetoNotas.Infra.Data.Repository.Context
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Seed
+            modelBuilder.Entity<User>()
+                .HasData(
+                new { Id = 1, Name = "Ramon Lisboa", Login = "ramonl", Password = "123456" }
+                );
+        }
 
         #region DbSets<Tables>
 
@@ -24,4 +32,5 @@ namespace ProjetoNotas.Infra.Data.Repository.Context
 
         #endregion
     }
+
 }
