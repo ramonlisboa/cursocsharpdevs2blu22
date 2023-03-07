@@ -1,3 +1,4 @@
+import { UserService } from './services/user/user.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projeto-notas';
+
+  constructor(public service: UserService) {
+    this.service.testApi().subscribe(
+      (response) => {
+        console.log(response);
+      }
+    );
+  }
 }

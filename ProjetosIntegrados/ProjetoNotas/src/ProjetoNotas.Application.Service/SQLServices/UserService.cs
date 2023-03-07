@@ -26,10 +26,10 @@ namespace ProjetoNotas.Application.Service.SQLServices
             return _userRepository.FindAll()
                         .Select(u => new UserDTO
                         {
-                            Id = u.Id,
-                            Name = u.Name,
-                            Login= u.Login,
-                            Password = u.Password
+                            id = u.Id,
+                            name = u.Name,
+                            login= u.Login,
+                            password = u.Password
                         })
                         .ToList();
         }
